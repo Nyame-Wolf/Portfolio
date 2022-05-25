@@ -1,0 +1,38 @@
+header {
+  left: 0px;
+  top: 0px;
+  width: 1440px;
+  height: 870px;
+  background: #1c1a19;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 20px;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 1440px;
+  height: 72px;
+  left: 0px;
+  top: 0px;
+  color: #ffffff;
+  background: #3e3c3c;
+  text-align: center;
+}
+#title {
+  font-weight: 700;
+  font-size: 20px;
+  position: absolute;
+  left: 142px;
+  top: 16px;
+  gap: 10px;
+}
+.link {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
