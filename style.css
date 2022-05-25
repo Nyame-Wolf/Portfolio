@@ -113,3 +113,18 @@ h1 {
   color: #f4f5f7;
   order: 2;
 }
+
+.social {
+  position: absolute;
+  width: 20px;
+  height: 98.96px;
+  left: 0;
+  top: 394px;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+  background: hsla(0, 0%, 81%, 0.1);
+  margin: 5px;
+}
