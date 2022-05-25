@@ -66,7 +66,16 @@ nav > ul > li > a > img {
   top: 8px;
   border-radius: 0px;
 }
+#header-image {
+  display: block;
+  position: absolute;
+  height: 768.4791662539425px;
+  width: 700px;
+  left: 740px;
+  top: 72px;
 
+  border-radius: 0px;
+}
 .container {
   display: flex;
   flex-direction: column;
