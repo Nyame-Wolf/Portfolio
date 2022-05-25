@@ -3,12 +3,12 @@
 }
 
 header {
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 1440px;
   height: 870px;
   background: #1c1a19;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   line-height: 20px;
   position: absolute;
@@ -20,24 +20,27 @@ nav {
   position: absolute;
   width: 1440px;
   height: 72px;
-  left: 0px;
-  top: 0px;
-  color: #ffffff;
+  left: 0;
+  top: 0;
+  color: #fff;
   background: #3e3c3c;
   text-align: center;
 }
+
 #title {
   font-weight: 700;
   font-size: 20px;
-  font-style: Bold;
+  font-style: bold;
   position: absolute;
   left: 142px;
   top: 16px;
   gap: 10px;
 }
+
 .link {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -51,21 +54,24 @@ nav > ul {
   right: 194px;
   top: calc(50% - 40px / 2);
 }
+
 nav > ul > li > a {
   font-weight: 600;
   font-size: 15px;
-  color: #ffffff;
+  color: #fff;
   padding: 10px 12px;
   text-decoration: none;
 }
+
 nav > ul > li > a > img {
   border: 2px solid #67798e;
   height: 24px;
   width: 24px;
   left: 8px;
   top: 8px;
-  border-radius: 0px;
+  border-radius: 0;
 }
+
 #header-image {
   display: block;
   position: absolute;
@@ -73,48 +79,51 @@ nav > ul > li > a > img {
   width: 700px;
   left: 740px;
   top: 72px;
-
-  border-radius: 0px;
+  border-radius: 0;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 192px 0px;
+  padding: 192px 0;
   position: absolute;
   height: 739px;
   left: 143px;
   top: 72px;
 }
+
 .container,
 .item {
   width: 566px;
 }
+
 h1 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 82px;
   color: #f55800;
   height: 160px;
-  left: 0px;
+  left: 0;
   top: 192px;
 }
 
 #support {
   height: 24px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
   order: 1;
-  color: #ffffff;
+  color: #fff;
 }
+
 #description {
   height: 123px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
