@@ -128,7 +128,21 @@ h1 {
   background-position: bottom right;
   background-repeat: no-repeat;
 }
-
+.grid {
+  display: grid;
+}
+#item1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.item2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .works {
   background: linear-gradient(
       180.45deg,
@@ -137,9 +151,7 @@ h1 {
     ),
     url(assets/works-section-background.png);
 }
-.grid {
-  display: grid;
-}
+
 .works h2 {
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -148,8 +160,17 @@ h1 {
   line-height: 52px;
   color: #1c1a19;
 }
+h3 {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
 #button {
   display: flex;
+  align-items: cemter;
 }
 #button li {
   text-align: center;
@@ -159,11 +180,14 @@ h1 {
   font-size: 15px;
   line-height: 20px;
   background-color: #fff;
-  width: 50px;
+  width: 70px;
   margin-right: 30px;
 }
 #button li a {
   color: #091e42;
+  height: 20px;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
 }
 #button li a:hover {
   border: 1px solid #8993a4;
@@ -171,10 +195,26 @@ h1 {
   color: #f55800;
 }
 
-.button-dark {
-  color: #091e42;
+.button-dark li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  width: 70px;
+  margin-right: 30px;
 }
 
+.button-dark {
+  display: flex;
+  align-items: center;
+  color: #091e42;
+}
+.button-dark li a {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+}
 .button-orange {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -185,6 +225,7 @@ h1 {
   letter-spacing: 0.03em;
   color: #fff;
   background-color: #ff6b00;
+  width: 100%;
 }
 
 h4 {
@@ -229,7 +270,11 @@ p {
   letter-spacing: 0.03em;
   color: #fff;
 }
-
+#content-abt {
+  background-image: url("assets/illustration-about-me-mobile.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
 .about-title {
   font-family: "Inter", sans-serif;
   font-style: bold;
