@@ -124,8 +124,7 @@ h1 {
 }
 
 .bgimage {
-  background-image: url("assets/Illustration-header@2x.png");
+  background-image: url("assets/illustration-header-mobile.png");
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  background-position-x: right;
 }
