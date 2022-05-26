@@ -37,7 +37,7 @@ nav {
   overflow: hidden;
 }
 #title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -78,7 +78,7 @@ h1 {
 
 #support {
   height: 27px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -115,6 +115,6 @@ h1 {
 .bgimage {
   background-image: url("assets/Illustration-header@2x.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 70%;
+  background-blend-mode: overlay;
+  background-position-x: right;
 }
