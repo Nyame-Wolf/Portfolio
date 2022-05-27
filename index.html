@@ -34,8 +34,8 @@
         </ul>
       </nav>
     </header>
-    <main class="bgimage">
-      <section class="headline">
+    <main>
+      <section class="headline bgimage">
         <div class="container">
           <h1 class="item">Hey There. I’m Mumenya</h1>
           <p class="item" id="support">I’am a Software Developer</p>
@@ -67,9 +67,9 @@
           </ul>
         </div>
       </section>
-      <section class="grid">
+      <section>
         <div id="item1">
-          <h2>My Recent Work</h2>
+          <h2>My Recent Works</h2>
           <img src="assets/ImgPlaceholder@2x.png" alt="" />
 
           <h3>Multi-Post Stories</h3>
@@ -83,26 +83,34 @@
             <li><a href="#">bootstrap</a></li>
             <li><a href="#">html</a></li>
             <li><a href="#">Ruby</a></li>
-            <a href="#"></a>
+          </ul>
+          <ul class="button-orange link small-mg">
+            <li><a href="#">See Project</a></li>
           </ul>
         </div>
-        <div class="works">
+        <div class="works grid">
           <div class="item2">
-            <button type="submit" class="button-orange">See Project</button>
-            <h4>Profesional Art Printing Data</h4>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="link" class="button-dark">
-              <li><a href="#">html</a></li>
-              <li><a href="#">bootstrap</a></li>
-              <li><a href="#">Ruby</a></li>
+            <!-- <button class="button-orange">See Project</button> -->
+            <ul class="button-orange link">
+              <li><a href="#">See Project</a></li>
             </ul>
+
+            <div class="works-description">
+              <h4>Profesional Art Printing Data</h4>
+              <p>
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required. has been the industry's standard
+              </p>
+              <ul class="link button-dark">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about about-list">
         <div id="content-abt">
           <h2>About me</h2>
           <p>
@@ -111,10 +119,12 @@
             you like what you see and have a project you need coded, don’t
             hestiate to contact me.
           </p>
-          <ul>
-            <li><a href="#" class="button-orange">Get Resume</a></li>
+          <ul class="link">
+            <li><a href="#" class="button-resume">Get Resume</a></li>
           </ul>
         </div>
+        <hr id="hr" />
+
         <ul class="link">
           <li class="about-title">
             Language
