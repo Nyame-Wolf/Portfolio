@@ -183,7 +183,7 @@ h1 {
 }
 
 h3 {
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -191,12 +191,12 @@ h3 {
   color: #091e42;
 }
 
-#button {
+.button {
   display: flex;
   align-items: center;
 }
 
-#button li {
+.button li {
   text-align: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -206,19 +206,6 @@ h3 {
   background-color: #fff;
   width: 70px;
   margin-right: 30px;
-}
-
-#button li a {
-  color: #091e42;
-  height: 20px;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-}
-
-#button li a:hover {
-  border: 1px solid #8993a4;
-  background: #fff5e1;
-  color: #f55800;
 }
 
 .button-dark li {
@@ -233,16 +220,33 @@ h3 {
   margin-right: 30px;
 }
 
-.button-dark {
-  display: flex;
-  align-items: center;
+.button-orange a {
+  color: #fff;
+}
+
+.button li a {
   color: #091e42;
+  height: 20px;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
 }
 
 .button-dark li a {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
+}
+
+.button li a:hover {
+  border: 1px solid #8993a4;
+  background: #fff5e1;
+  color: #f55800;
+}
+
+.button-dark {
+  display: flex;
+  align-items: center;
+  color: #091e42;
 }
 
 .button-dark li a:hover {
@@ -272,10 +276,6 @@ h3 {
   gap: 20px;
   width: 124px;
   height: 20px;
-}
-
-.button-orange a {
-  color: #fff;
 }
 
 h4 {
