@@ -8,8 +8,9 @@
 
 - HTML
 - CSS
-- Flexbox
+- CSS Flexbox
 - Figma
+- CSS Grid
 
 ## Getting Started
 
