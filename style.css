@@ -358,6 +358,7 @@ p {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+  text-align: center;
 }
 
 .about-li {
@@ -390,4 +391,8 @@ p {
   height: 18px;
   background: #ff6b00;
   transform: rotate(-45deg);
+}
+
+.list-flex {
+  display: flex;
 }
