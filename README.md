@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-**This a set up of my mobile version skeleton of my portfolio project It uses a figma clone from microverse student portal..**
+**This a set up of my mobile version of my portfolio project. It adds the works and about sections to the already created headline section. It uses a figma template 2 from microverse student portal..**
 
 ## Authors
 
