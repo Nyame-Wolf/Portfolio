@@ -192,7 +192,7 @@ p {
   width: 100%;
 }
 
-.item1 h2 {
+.grid-title {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -201,7 +201,7 @@ p {
   color: #1c1a19;
   border-bottom: 1px solid black;
   padding: 1em;
-  margin: 0;
+  text-align: center;
   margin-bottom: 1em;
 }
 
