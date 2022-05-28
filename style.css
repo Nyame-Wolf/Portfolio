@@ -164,6 +164,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
 }
 
 .works {
@@ -173,8 +174,7 @@ p {
   border: 1px solid black;
   margin-top: 30px;
   width: 90%;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -219,6 +219,7 @@ h3 {
 .button {
   display: flex;
   padding: 0;
+  width: 100%;
 }
 
 .button li {
@@ -298,7 +299,7 @@ h3 {
   width: 130px;
   height: 50px;
   align-self: flex-start;
-  margin-left: 43px;
+  padding: 0;
 }
 
 h4 {
@@ -361,7 +362,7 @@ h4 {
   padding: 3em;
 }
 
-#hr {
+.hr {
   width: 85%;
 }
 
@@ -373,7 +374,10 @@ h4 {
   line-height: 44px;
   color: #fff;
   text-align: center;
-  padding-top: 20px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .about-li {
@@ -386,27 +390,29 @@ h4 {
   color: #fff;
 }
 
-#disc ::before {
+.disc {
   width: 18px;
   height: 18px;
   background: #ff6b00;
   border-radius: 150px;
+  margin-right: 1em;
 }
 
-#rsquare h5::after {
+.rsquare {
   width: 18px;
   height: 18px;
   background: #ff6b00;
   transform: rotate(-45deg);
+  margin-right: 1em;
+  display: block;
 }
-
-#square li::after {
-  width: 18px;
+.square {
   height: 18px;
+  width: 18px;
   background: #ff6b00;
-  transform: rotate(-45deg);
+  display: block;
+  margin-right: 1em;
 }
-
 .list-flex {
   display: flex;
 }
