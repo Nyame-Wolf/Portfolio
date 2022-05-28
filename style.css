@@ -135,6 +135,9 @@ h1 {
 .grid {
   display: grid;
   grid-template-rows: auto;
+  width: 90%;
+  height: 100%;
+  margin: 50px;
 }
 
 .item1 {
@@ -155,17 +158,12 @@ h1 {
   justify-content: center;
 }
 
-.item2 {
+.works {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.works {
-  width: 90%;
-  height: 100%;
-  margin: 50px;
   border: 1px solid black;
+  margin-top: 30px;
   background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
@@ -176,6 +174,9 @@ h1 {
 
 .works-description {
   padding: 3em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .item1 img {
