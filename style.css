@@ -285,6 +285,8 @@ h3 {
 .small-mg {
   width: 130px;
   height: 50px;
+  align-self: flex-start;
+  margin-left: 112px;
 }
 
 h4 {
