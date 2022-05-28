@@ -172,7 +172,8 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 30px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -407,6 +408,7 @@ h4 {
   margin-right: 1em;
   display: block;
 }
+
 .square {
   height: 18px;
   width: 18px;
