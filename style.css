@@ -212,6 +212,7 @@ h3 {
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
+  margin-bottom: 0;
 }
 
 .button {
@@ -293,12 +294,20 @@ h3 {
   padding: 10px 12px;
 }
 
+.button-orange button:hover {
+  background-color: #5b5957;
+}
+
 .small-mg {
   width: 130px;
   height: 50px;
   align-self: flex-start;
   padding: 0;
   margin-left: 10px;
+}
+
+.small-mg button:hover {
+  background-color: #5b5957;
 }
 
 h4 {
