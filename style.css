@@ -137,12 +137,22 @@ h1 {
   grid-template-rows: auto;
 }
 
-#item1 {
+.item1 {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.item1 p {
+  color: #091e42;
+  padding: 0em 4em 0;
+}
+.item1-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .item2 {
@@ -156,8 +166,7 @@ h1 {
   height: 100%;
   margin: 50px;
   border: 1px solid black;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -169,19 +178,22 @@ h1 {
   padding: 3em;
 }
 
-#item1 img {
+.item1 img {
   width: 90%;
 }
 
-.works h2 {
+.item1 h2 {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: #1c1a19;
+  margin: 70px;
 }
-
+.item1 hr {
+  margin: 70px;
+}
 h3 {
   font-family: "Crete Round", serif;
   font-style: normal;
@@ -265,17 +277,13 @@ h3 {
   letter-spacing: 0.03em;
   color: #fff;
   background-color: #ff6b00;
-  width: 95%;
-  height: 40px;
-  margin-top: 0;
-  padding-top: 20px;
+  width: 100%;
+  padding: 10px 12px;
 }
 
 .small-mg {
-  padding: 12px;
-  gap: 20px;
-  width: 124px;
-  height: 20px;
+  width: 130px;
+  height: 50px;
 }
 
 h4 {
@@ -359,6 +367,7 @@ p {
   line-height: 44px;
   color: #fff;
   text-align: center;
+  padding-top: 20px;
 }
 
 .about-li {
@@ -378,12 +387,11 @@ p {
   border-radius: 150px;
 }
 
-#rsquare li::after {
+#rsquare h5::after {
   width: 18px;
   height: 18px;
   background: #ff6b00;
   transform: rotate(-45deg);
-  flex-grow: 0;
 }
 
 #square li::after {
