@@ -294,7 +294,7 @@ h3 {
   padding: 10px 12px;
 }
 
-.button-orange button:hover {
+button.button-orange:hover {
   background-color: #5b5957;
 }
 
@@ -306,7 +306,7 @@ h3 {
   margin-left: 10px;
 }
 
-.small-mg button:hover {
+button.small-mg:hover {
   background-color: #5b5957;
 }
 
