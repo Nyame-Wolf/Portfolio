@@ -424,3 +424,48 @@ h4 {
   display: block;
   margin-right: 1em;
 }
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p{
+  width: 70%;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 44px;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form input{
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+textarea{
+  background-color:  #FBF8F7;
+  border: none;
+  padding: 1em;
+  
+}
+
+form button{
+  background-color: #FF6B00;
+  color: #fff;
+  border: 0px solid #fff;
+  margin-top: 2em;
+  padding: 1em;
+}
