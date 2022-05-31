@@ -153,6 +153,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   /* color: #fff; */
 }
 
@@ -172,7 +173,8 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 30px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -431,11 +433,10 @@ footer {
   align-items: center;
 }
 
-footer p {
+.footer-p {
   width: 70%;
   font-weight: 700;
   font-style: normal;
-  font-weight: 700;
   font-size: 1.6em;
   line-height: 44px;
   text-align: center;
@@ -463,7 +464,7 @@ textarea {
 form button {
   background-color: #ff6b00;
   color: #fff;
-  border: 0px solid #fff;
+  border: 0 solid #fff;
   margin-top: 2em;
   padding: 1em;
   margin-bottom: 4em;
@@ -481,9 +482,11 @@ form button {
   margin: 5px;
   background: #505f79;
 }
+
 .media li {
   margin: 0.5em;
 }
+
 .fa {
   color: #505f79;
 }
