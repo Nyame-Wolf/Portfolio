@@ -238,16 +238,30 @@
         chat please get in touch.
       </p>
       <form action="https://formspree.io/f/xgeddddr" method="POST">
-        <input name="name" type="text" id="user-name" placeholder="Full name" />
+        <input
+          name="name"
+          type="text"
+          id="user-name"
+          placeholder="Full name"
+          required
+          maxlength="30"
+        />
         <input
           type="email"
           name="email"
           id="user-email"
           placeholder="Email address"
+          required
         />
-        <textarea name="message" id="" cols="30" rows="10">
-Enter text  here</textarea
-        >
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          required
+          maxlength="500"
+          placeholder="Enter text  here"
+        ></textarea>
         <button type="submit">Get in touch</button>
       </form>
       <div class="social">
