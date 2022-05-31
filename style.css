@@ -439,6 +439,7 @@ footer p{
   font-size: 1.6em;
   line-height: 44px;
   text-align: center;
+
 }
 
 form{
@@ -468,4 +469,19 @@ form button{
   border: 0px solid #fff;
   margin-top: 2em;
   padding: 1em;
+  margin-bottom: 4em;
+}
+
+.footer-hr{
+    border: 1px solid #DFE1E6;
+    display: block;
+    width: 100%;
+  
+}
+
+.social-footer img{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+
 }
