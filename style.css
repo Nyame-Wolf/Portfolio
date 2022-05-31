@@ -425,13 +425,13 @@ h4 {
   margin-right: 1em;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-footer p{
+footer p {
   width: 70%;
   font-weight: 700;
   font-style: normal;
@@ -439,32 +439,29 @@ footer p{
   font-size: 1.6em;
   line-height: 44px;
   text-align: center;
-
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-form input{
+form input {
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   margin-bottom: 1.5em;
   width: 100%;
 }
 
-textarea{
-  background-color:  #FBF8F7;
+textarea {
+  background-color: #fbf8f7;
   border: none;
   padding: 1em;
-  
 }
 
-form button{
-  background-color: #FF6B00;
+form button {
+  background-color: #ff6b00;
   color: #fff;
   border: 0px solid #fff;
   margin-top: 2em;
@@ -472,16 +469,21 @@ form button{
   margin-bottom: 4em;
 }
 
-.footer-hr{
-    border: 1px solid #DFE1E6;
-    display: block;
-    width: 100%;
-  
+.footer-hr {
+  border: 1px solid #dfe1e6;
+  display: block;
+  width: 100%;
 }
 
-.social-footer img{
+.social-footer img {
   width: 20px;
   height: 20px;
   margin: 5px;
-
+  background: #505f79;
+}
+.media li {
+  margin: 0.5em;
+}
+.fa {
+  color: #505f79;
 }
