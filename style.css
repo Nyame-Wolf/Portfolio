@@ -436,6 +436,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #e5e5e5;
 }
 
 .footer-p {
@@ -467,6 +468,7 @@ form input {
   font-size: 15px;
   line-height: 24px;
   color: #979493;
+  background: #e5e5e5;
 }
 
 textarea {
@@ -493,6 +495,7 @@ form button {
 .footer-hr {
   border: 1px solid #dfe1e6;
   display: block;
+  background: #dfe1e6;
   width: 100%;
 }
 
@@ -501,6 +504,13 @@ form button {
   height: 20px;
   background: #505f79;
   margin: 5px;
+}
+.media-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: 170px;
 }
 button.footer-b:hover {
   border: 1px solid #8993a4;
