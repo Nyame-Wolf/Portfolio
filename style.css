@@ -173,13 +173,15 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 30px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
     ),
     url(assets/works-section-background.png);
 }
+
 .works-p {
   color: #fff;
 }
@@ -325,6 +327,7 @@ h4 {
 .about {
   background: #1c1a19;
 }
+
 .about-p {
   color: #fff;
 }
@@ -505,6 +508,7 @@ form button {
   background: #505f79;
   margin: 5px;
 }
+
 .media-footer {
   display: flex;
   flex-direction: row;
@@ -512,11 +516,13 @@ form button {
   height: 40px;
   width: 170px;
 }
+
 button.footer-b:hover {
   border: 1px solid #8993a4;
   background: #fff5e1;
   color: #f55800;
 }
+
 button.footer-b:active {
   border: 1px solid #8993a4;
   color: #f55800;
@@ -526,7 +532,8 @@ button.footer-b:active {
   color: #505f79;
   margin: 5px;
 }
-footer img {
+
+.footer-img {
   margin-bottom: 0.5em;
   background: #0d151e;
   border-radius: 10px;
