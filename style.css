@@ -493,6 +493,13 @@ form button {
   margin-top: 2em;
   padding: 1em;
   margin-bottom: 4em;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .footer-hr {
