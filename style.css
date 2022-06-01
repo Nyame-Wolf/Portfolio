@@ -11,8 +11,6 @@ body {
 }
 
 main {
-  /* height: 100%;
-  width: 100%; */
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -171,8 +169,7 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 30px;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -544,4 +541,34 @@ button.footer-b:active {
   margin-bottom: 0.5em;
   background: #0d151e;
   border-radius: 10px;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: #3c3a39;
+    overflow: hidden;
+  }
+  nav > img {
+    display: none;
+  }
+  nav > ul {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 2em;
+  }
+  nav > ul > li > a {
+    color: #fff;
+  }
+  .title {
+    padding-left: 10%;
+  }
+  .mail {
+    margin-right: 6em;
+  }
+  .headline {
+    align-items: flex-start;
+  }
 }
