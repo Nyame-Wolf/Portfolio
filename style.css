@@ -153,8 +153,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  /* color: #fff; */
 }
 
 .item1 p {
@@ -439,7 +437,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #e5e5e5;
+  background: #fff;
 }
 
 .footer-p {
@@ -458,6 +456,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
 }
 
 form input {
@@ -471,7 +470,7 @@ form input {
   font-size: 15px;
   line-height: 24px;
   color: #979493;
-  background: #e5e5e5;
+  background: #fff;
 }
 
 textarea {
@@ -484,13 +483,14 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
+  width: 100%;
 }
 
 form button {
   background-color: #ff6b00;
   color: #fff;
   border: 0 solid #fff;
-  margin-top: 2em;
+  margin-top: 1em;
   padding: 1em;
   margin-bottom: 4em;
   font-family: "Inter", sans-serif;
