@@ -153,7 +153,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
 }
 
 .item1 p {
@@ -172,12 +171,17 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 30px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
     ),
     url(assets/works-section-background.png);
+}
+
+.works-p {
+  color: #fff;
 }
 
 .works-description {
@@ -322,6 +326,10 @@ h4 {
   background: #1c1a19;
 }
 
+.about-p {
+  color: #fff;
+}
+
 .about-list {
   display: flex;
   flex-direction: column;
@@ -423,4 +431,117 @@ h4 {
   background: #ff6b00;
   display: block;
   margin-right: 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.footer-p {
+  width: 70%;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  margin-top: 3em;
+  color: #172b4d;
+  margin-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 1.5em;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+  background: #fff;
+}
+
+textarea {
+  background-color: #fbf8f7;
+  border: none;
+  padding: 1em;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  width: 100%;
+}
+
+form button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: 0 solid #fff;
+  margin-top: 1em;
+  padding: 1em;
+  margin-bottom: 4em;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer-hr {
+  border: 1px solid #dfe1e6;
+  display: block;
+  background: #dfe1e6;
+  width: 100%;
+}
+
+.social-footer img {
+  width: 20px;
+  height: 20px;
+  background: #505f79;
+  margin: 5px;
+}
+
+.media-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  width: 170px;
+}
+
+button.footer-b:hover {
+  border: 1px solid #8993a4;
+  background: #fff5e1;
+  color: #f55800;
+}
+
+button.footer-b:active {
+  border: 1px solid #8993a4;
+  color: #f55800;
+}
+
+.fa {
+  color: #505f79;
+  margin: 5px;
+}
+
+.footer-img {
+  margin-bottom: 0.5em;
+  background: #0d151e;
+  border-radius: 10px;
 }
