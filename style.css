@@ -442,9 +442,12 @@ footer {
   width: 70%;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.6em;
+  font-size: 32px;
   line-height: 44px;
   text-align: center;
+  margin-top: 3em;
+  color: #172b4d;
+  margin-bottom: 2em;
 }
 
 form {
@@ -458,12 +461,24 @@ form input {
   border-bottom: 1px solid #dbd8d7;
   margin-bottom: 1.5em;
   width: 100%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
 }
 
 textarea {
   background-color: #fbf8f7;
   border: none;
   padding: 1em;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
 }
 
 form button {
@@ -484,14 +499,25 @@ form button {
 .social-footer img {
   width: 20px;
   height: 20px;
-  margin: 5px;
   background: #505f79;
+  margin: 5px;
 }
-
-.media li {
-  margin: 0.5em;
+button.footer-b:hover {
+  border: 1px solid #8993a4;
+  background: #fff5e1;
+  color: #f55800;
+}
+button.footer-b:active {
+  border: 1px solid #8993a4;
+  color: #f55800;
 }
 
 .fa {
   color: #505f79;
+  margin: 5px;
+}
+footer img {
+  margin-bottom: 0.5em;
+  background: #0d151e;
+  border-radius: 10px;
 }
