@@ -153,12 +153,12 @@ p {
 
 .item1 p {
   color: #091e42;
+  width: 50%;
 }
 
 .item1-description {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .works {
@@ -210,7 +210,8 @@ h3 {
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 1em;
 }
 
 .button {
@@ -658,11 +659,16 @@ button.footer-b:active {
     width: 30%;
     align-items: flex-start;
   }
+  .item1 p {
+    width: 100%;
+  }
 
   .small-mg {
     margin-left: 0;
   }
-
+  .works-grid {
+    display: none;
+  }
   /*end works section styles*/
 
   /*about-section styles*/
