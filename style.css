@@ -895,4 +895,13 @@ button.footer-b:active {
       background-color: blue;
     }
   }
+
+  .image-animate:hover{
+    transform: scale(0.5);
+    background-color: #0d151e;
+    transition-duration: 1s;
+
+  }
+
+
 }
