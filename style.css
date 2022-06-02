@@ -891,4 +891,21 @@ button.footer-b:active {
   .footer-img {
     display: none;
   }
+
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 1s;
+  }
+
+  @keyframes background-color {
+    100% {
+      background-color: blue;
+    }
+  }
+
+  .image-animate:hover {
+    transform: scale(0.5);
+    background-color: #0d151e;
+    transition-duration: 1s;
+  }
 }
