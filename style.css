@@ -204,6 +204,10 @@ p {
   margin-bottom: 1em;
 }
 
+.grid-title-hr {
+  display: none;
+}
+
 h3 {
   font-family: "Crete Round", serif;
   font-style: normal;
