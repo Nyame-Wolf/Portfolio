@@ -434,6 +434,12 @@ footer {
   background: #fff;
 }
 
+.footer-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer-p {
   width: 70%;
   font-weight: 700;
@@ -657,5 +663,47 @@ button.footer-b:active {
     flex-direction: column;
     align-items: center;
     margin: 5% 50% 10% 5%;
+  }
+  /* footer styles*/
+  .footer-items {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: baseline;
+    margin-bottom: 6em;
+  }
+  .footer-p {
+    width: 37%;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    margin-top: 3em;
+    color: #262626;
+    padding: 2.5em;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .dsk-form {
+    width: 45%;
+  }
+  form {
+    align-items: flex-start;
+  }
+  textarea {
+    width: 100%;
+  }
+  form button {
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+  .social-footer {
+    width: 200px;
+    height: 40px;
+  }
+  .footer-img {
+    display: none;
   }
 }
