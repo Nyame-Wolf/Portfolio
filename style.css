@@ -645,6 +645,25 @@ button.footer-b:active {
     background-repeat: no-repeat;
     background-size: 50% 95%;
   }
+  /*start works section styles*/
+  .item1 {
+    flex-direction: row;
+    gap: 3em;
+    align-items: flex-start;
+  }
+  .item1 img {
+    width: 60%;
+  }
+  .item1-description {
+    width: 30%;
+    align-items: flex-start;
+  }
+
+  .small-mg {
+    margin-left: 0;
+  }
+
+  /*end works section styles*/
 
   /*about-section styles*/
   .abt-list {
