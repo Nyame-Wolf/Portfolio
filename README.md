@@ -22,10 +22,6 @@
 - Twitter: [@twitterhandle](https://twitter.com/Mumenyam)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mumenya-nyamu-web-designer-data-enthusiast/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/shahira-sadat)
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -40,8 +36,6 @@ Give a ⭐️ if you like this project!
 
 **Cloned a microverse template**
 [Microverse-Student-Project] (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?)
-
-Much appreciation to Shahira Sadat for her assistance in the building of the contact form.
 
 ## 📝 License
 
