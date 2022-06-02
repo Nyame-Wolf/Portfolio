@@ -3,7 +3,7 @@
 # Portfolio
 
 > Description the project.
-> **This a set up of my mobile version of my portfolio project. It adds a contact form to the already created headline, works and about sections. It uses a figma template 2 from microverse student portal..**
+> **This a set up of a desktop version of my portfolio project. It uses media queries and grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It uses a figma template 2 from microverse student portal..**
 
 ## Built With
 
@@ -12,6 +12,7 @@
 - CSS Flexbox
 - Figma
 - CSS Grid
+- Media queries.
 
 ## Authors
 
@@ -20,10 +21,6 @@
 - GitHub: [@githubhandle](https://github.com/Nyame-Wolf/)
 - Twitter: [@twitterhandle](https://twitter.com/Mumenyam)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mumenya-nyamu-web-designer-data-enthusiast/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/shahira-sadat)
 
 ## 🤝 Contributing
 
@@ -39,8 +36,6 @@ Give a ⭐️ if you like this project!
 
 **Cloned a microverse template**
 [Microverse-Student-Project] (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?)
-
-Much appreciation to Shahira Sadat for her assistance in the building of the contact form.
 
 ## 📝 License
 
