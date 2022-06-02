@@ -3,7 +3,7 @@
 # Portfolio
 
 > Description the project.
-> **This a set up of my mobile version of my portfolio project. It adds a contact form to the already created headline, works and about sections. It uses a figma template 2 from microverse student portal..**
+> **This a set up of a desktop version of my portfolio project. It uses media queries and grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It uses a figma template 2 from microverse student portal..**
 
 ## Built With
 
@@ -12,6 +12,7 @@
 - CSS Flexbox
 - Figma
 - CSS Grid
+- Media queries.
 
 ## Authors
 
