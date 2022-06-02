@@ -348,6 +348,7 @@ h4 {
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+  margin-bottom: 0;
 }
 
 .flex-paragraph {
@@ -362,12 +363,17 @@ h4 {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.03em;
   color: #fff;
   background-color: #ff6b00;
   width: 100%;
   padding: 5px;
+}
+
+.left {
+  align-self: flex-start;
+  padding-left: 0;
 }
 
 .abtbkg {
@@ -379,7 +385,7 @@ h4 {
 .content-abt {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   height: 563px;
   margin: 5% 5% 10% 5%;
 }
@@ -411,7 +417,7 @@ h4 {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
@@ -832,7 +838,7 @@ button.footer-b:active {
   .content-abt {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 5% 50% 10% 5%;
   }
 
