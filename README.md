@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Description the project.
+> Project Description.
 > **This is my Portfolio project created using html and css. It is responsive for both desktop and mobile. It uses media queries, css-grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It uses a figma template 2 from microverse student portal..**
 
 ## Built With
@@ -16,7 +16,7 @@
 
 ## Live Demo 
 
-[Live Demo Link]((https://nyame-wolf.github.io/Portfolio/))
+[Live Demo Link](https://nyame-wolf.github.io/Portfolio/)
 
 ## Authors
 
