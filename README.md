@@ -2,8 +2,8 @@
 
 # Portfolio
 
-> Description the project.
-> **This a set up of a desktop version of my portfolio project. It uses media queries and grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It uses a figma template 2 from microverse student portal..**
+> Project Description.
+> **This is my Portfolio project created using html and css. It is responsive for both desktop and mobile. It uses media queries, css-grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It uses a figma template 2 from microverse student portal..**
 
 ## Built With
 
@@ -13,6 +13,10 @@
 - Figma
 - CSS Grid
 - Media queries.
+
+## Live Demo 
+
+[Live Demo Link](https://nyame-wolf.github.io/Portfolio/)
 
 ## Authors
 
