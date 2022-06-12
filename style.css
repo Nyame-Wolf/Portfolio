@@ -8,6 +8,17 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Crete Round", serif;
+  font-style: normal;
 }
 
 main {
@@ -40,7 +51,7 @@ nav {
   overflow: hidden;
 }
 
-#title {
+.title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -48,7 +59,7 @@ nav {
   line-height: 24px;
   text-align: center;
   color: #fff;
-  padding-left: 15px;
+  padding-left: 10%;
 }
 
 .link {
@@ -72,8 +83,6 @@ nav > ul {
 }
 
 h1 {
-  font-family: "Crete Round", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -143,8 +152,6 @@ h1 {
 }
 
 p {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -153,12 +160,12 @@ p {
 
 .item1 p {
   color: #091e42;
-  width: 50%;
 }
 
 .item1-description {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .works {
@@ -174,6 +181,7 @@ p {
       rgba(38, 38, 38, 0.9) 61.94%
     ),
     url(assets/background.png);
+  width: 100%;
 }
 
 .works-p {
@@ -192,8 +200,6 @@ p {
 }
 
 .grid-title {
-  font-family: "Crete Round", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
@@ -209,8 +215,6 @@ p {
 }
 
 h3 {
-  font-family: "Crete Round", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -222,70 +226,56 @@ h3 {
 .button-light {
   display: flex;
   padding: 0;
-  width: 100%;
+  gap: 1.5em;
 }
 
-.button li {
+.small-mg a {
+  padding: 0.8em;
+}
+
+.link-item li {
   text-align: center;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  background-color: #fff;
-  width: 70px;
-  margin-right: 40px;
-}
-
-.button-dark li {
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  width: 70px;
-  margin-right: 30px;
 }
 
 .button-orange a {
   color: #fff;
 }
 
-.button li a {
-  color: #091e42;
-  height: 20px;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
+.link-item li a {
+  padding: 0.5em;
 }
 
-.button-dark li a {
-  padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.24);
+.is-link:hover {
+  background: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.button-dark li {
   color: #fff;
 }
 
-.button :hover {
-  background: #fff5e1;
-  color: #f55800;
+.button-light li a {
+  color: #091e42;
+  border: 1px solid #8993a4;
+}
+
+.button-dark li a {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
 }
 
 .button-dark {
   display: flex;
   align-items: center;
   color: #091e42;
-}
-
-.button-dark li a:hover {
-  background: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+  gap: 1.5em;
 }
 
 .button-orange {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -294,32 +284,20 @@ h3 {
   color: #fff;
   background-color: #ff6b00;
   width: 100%;
-  padding: 10px 12px;
+  padding: 0;
+  height: 2.5em;
+  margin: 0;
 }
 
-button.button-orange:hover {
-  background: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+.pt {
+  padding-top: 0.8em;
 }
 
 .small-mg {
-  width: 130px;
-  height: 50px;
-  align-self: flex-start;
   padding: 0;
-  margin-left: 10px;
-}
-
-button.small-mg:hover {
-  background: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
 }
 
 h4 {
-  font-family: "Crete Round", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
@@ -341,8 +319,6 @@ h4 {
 }
 
 .about h2 {
-  font-family: "Crete Round", serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
@@ -358,8 +334,6 @@ h4 {
 }
 
 .button-resume {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -368,7 +342,7 @@ h4 {
   color: #fff;
   background-color: #ff6b00;
   width: 100%;
-  padding: 5px;
+  padding: 0.5em;
 }
 
 .left {
@@ -397,8 +371,6 @@ h4 {
 }
 
 .about-title {
-  font-family: "Inter", sans-serif;
-  font-style: bold;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -412,8 +384,6 @@ h4 {
 }
 
 .about-li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
@@ -484,8 +454,6 @@ form input {
   border-bottom: 1px solid #dbd8d7;
   margin-bottom: 1.5em;
   width: 100%;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -497,8 +465,6 @@ textarea {
   background-color: #fbf8f7;
   border: none;
   padding: 1em;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -513,8 +479,6 @@ form button {
   margin-top: 1em;
   padding: 1em;
   margin-bottom: 4em;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -542,12 +506,6 @@ form button {
   align-items: center;
   height: 40px;
   width: 170px;
-}
-
-button.footer-b:hover {
-  background: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
 }
 
 button.footer-b:active {
@@ -591,7 +549,11 @@ button.footer-b:active {
   }
 
   .title {
-    padding-left: 10%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .mail {
@@ -617,8 +579,6 @@ button.footer-b:active {
   }
 
   h1 {
-    font-family: "Crete Round", serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
@@ -630,8 +590,6 @@ button.footer-b:active {
 
   #support {
     height: 24px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -641,8 +599,6 @@ button.footer-b:active {
 
   #description {
     height: 123px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -716,10 +672,6 @@ button.footer-b:active {
     height: 0.5%;
   }
 
-  .item1 p {
-    width: 100%;
-  }
-
   .small-mg {
     margin-left: 0;
   }
@@ -770,8 +722,8 @@ button.footer-b:active {
   .button-orange-bottom {
     position: absolute;
     bottom: 0;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
+    left: 0;
+    align-self: flex-start;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
@@ -780,13 +732,9 @@ button.footer-b:active {
     color: #fff;
     background-color: #ff6b00;
     width: 100%;
-    padding: 10px 12px;
-  }
-
-  .button:hover {
-    background: #fff5e1;
-    color: #f55800;
-    border: 1px solid #f55800;
+    padding: 0;
+    padding-top: 0.8em;
+    height: 2.5em;
   }
 
   .works-2-row2 {
@@ -892,14 +840,14 @@ button.footer-b:active {
     display: none;
   }
 
-  button:hover {
-    animation-name: background-color;
-    animation-duration: 1s;
+  .is-link:hover {
+    animation-name: font-size;
+    animation-duration: 2s;
   }
 
-  @keyframes background-color {
+  @keyframes font-size {
     100% {
-      background-color: blue;
+      font-size: 150%;
     }
   }
 
