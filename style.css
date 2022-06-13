@@ -50,7 +50,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   background: #3c3a39;
-  overflow: hidden;
 }
 .link-color {
   color: #fff;
@@ -94,6 +93,7 @@ a {
   background-color: #3c3a39;
   flex-wrap: wrap;
 }
+
 .close-toggle {
   align-self: flex-end;
   margin-top: 1em;
@@ -556,7 +556,8 @@ button.footer-b:active {
     overflow: hidden;
   }
 
-  .open-toggle {
+  .fa-bars,
+  .fa-times {
     display: none;
   }
 
