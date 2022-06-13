@@ -26,20 +26,32 @@
   <body>
     <header>
       <nav>
-        <p class="title">Mumenya Nyamu</p>
+        <p class="title" id="title">Mumenya Nyamu</p>
         <div class="open-toggle" id="open-toggle">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <ul class="link">
-          <li><a class="is-link" href="#">Portfolio</a></li>
-          <li><a class="is-link" href="#">About</a></li>
-          <li><a class="is-link" href="#">Contact</a></li>
-          <li class="mail">
-            <a class="is-link" href="#"
-              ><i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
+        <div class="main-links">
+          <ul class="link">
+            <li><a class="is-link link-color" href="#">Portfolio</a></li>
+            <li><a class="is-link link-color" href="#">About</a></li>
+            <li><a class="is-link link-color" href="#">Contact</a></li>
+            <li class="mail">
+              <a class="is-link link-color" href="#"
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-links" id="mobile-links">
+          <div class="close-toggle">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+          <ul class="link">
+            <li><a class="is-link mb-link" href="#">Portfolio</a></li>
+            <li><a class="is-link mb-link" href="#">About</a></li>
+            <li><a class="is-link mb-link" href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -425,5 +437,6 @@
       </div>
       <img class="footer-img" src="assets/Shape.png" alt="" />
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
