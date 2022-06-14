@@ -51,9 +51,11 @@ nav {
   justify-content: space-between;
   background: #3c3a39;
 }
+
 .link-color {
   color: #fff;
 }
+
 .title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -77,21 +79,28 @@ a {
 .mobile-links {
   display: none;
 }
-.fa-times {
-  color: #67798e;
-  font-size: 1.5rem;
-}
+
 .mobile-links.open {
   width: 100%;
-  position: relative;
-  height: 70vh;
-  z-index: 10;
+  position: fixed;
+  height: 100vh;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #fff;
-  background-color: #3c3a39;
+  background-color: #fff;
   flex-wrap: wrap;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 90vh;
+  background: #3c3a39;
 }
 
 .close-toggle {
@@ -99,19 +108,45 @@ a {
   margin-top: 1em;
   margin-right: 1em;
 }
+
+.ul {
+  width: 100%;
+}
+
+.mb-ul {
+  width: 100%;
+  padding: 0 0 0 1em;
+}
+
+.nav-item {
+  width: 90%;
+  border-bottom: solid 1px #6f6c6b;
+  padding: 1em;
+}
+
 .mb-link {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #fff5e1;
-  width: 100%;
-  gap: 1em;
+  width: 90%;
   padding-bottom: 0.1em;
-  border-bottom: solid 1px #6f6c6b;
+}
+
+.mblink-img {
+  align-self: center;
+  margin-top: 4em;
+  background: #0d151e;
+  border-radius: 5px;
 }
 
 .fa {
   color: #fff;
+}
+
+.fa-times {
+  color: #67798e;
+  font-size: 1.5rem;
 }
 
 .fa-bars {
@@ -209,7 +244,8 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 1em;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -702,7 +738,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -747,7 +784,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         179.35deg,
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
@@ -761,7 +799,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         179.4deg,
         rgba(38, 38, 38, 0) 0.81%,
         rgba(38, 38, 38, 0.9) 84.03%
