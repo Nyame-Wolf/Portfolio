@@ -915,10 +915,6 @@ button.footer-b:active {
     border: 1px solid #ebecf0;
     box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   }
-  .dsk-popup-heading {
-    display: flex;
-    gap: 18em;
-  }
   .dsk-popup-title {
     font-weight: 400;
     font-size: 32px;
@@ -927,6 +923,7 @@ button.footer-b:active {
   }
   .desktop-popup .fa-times {
     display: block;
+    align-self: flex-end;
   }
   .dsk-popup-links {
     display: flex;
