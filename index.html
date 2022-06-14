@@ -26,20 +26,42 @@
   <body>
     <header>
       <nav>
-        <p class="title">Mumenya Nyamu</p>
+        <p class="title" id="title">Mumenya Nyamu</p>
         <div class="open-toggle" id="open-toggle">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <ul class="link">
-          <li><a class="is-link" href="#">Portfolio</a></li>
-          <li><a class="is-link" href="#">About</a></li>
-          <li><a class="is-link" href="#">Contact</a></li>
+        <ul class="link main-links" id="main-links">
+          <li><a class="is-link link-color" href="#">Portfolio</a></li>
+          <li><a class="is-link link-color" href="#">About</a></li>
+          <li><a class="is-link link-color" href="#">Contact</a></li>
           <li class="mail">
-            <a class="is-link" href="#"
+            <a class="is-link link-color" href="#"
               ><i class="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
+
+        <div class="mobile-links" id="mobile-links">
+          <div class="link-container">
+            <div class="close-toggle" id="close-toggle">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="ul">
+              <ul class="link mb-ul">
+                <li class="nav-item">
+                  <a class="is-link mb-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="is-link mb-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="is-link mb-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img class="mblink-img" src="assets/Shape.png" alt="" />
+        </div>
       </nav>
     </header>
     <main>
@@ -79,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section class="grid">
+      <section class="grid" id="portfolio">
         <div class="works-title">
           <h2 class="grid-title">My Recent Works</h2>
           <hr class="grid-title-hr" />
@@ -307,7 +329,7 @@
           </article>
         </div>
       </section>
-      <section class="about about-list">
+      <section class="about about-list" id="about">
         <div class="abtbkg">
           <div class="content-abt">
             <h2>About me</h2>
@@ -365,7 +387,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="footer-items">
         <p class="footer-p">
           I am always interested in hearing about new projects, so if you'd like
@@ -425,5 +447,6 @@
       </div>
       <img class="footer-img" src="assets/Shape.png" alt="" />
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

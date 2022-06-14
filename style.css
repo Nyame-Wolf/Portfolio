@@ -49,9 +49,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 82px;
   background: #3c3a39;
-  overflow: hidden;
+}
+
+.link-color {
+  color: #fff;
 }
 
 .title {
@@ -73,12 +75,78 @@ a {
   text-decoration: none;
 }
 
-nav > ul {
+.main-links,
+.mobile-links {
   display: none;
+}
+
+.mobile-links.open {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 90vh;
+  background: #3c3a39;
+}
+
+.close-toggle {
+  align-self: flex-end;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.ul {
+  width: 100%;
+}
+
+.mb-ul {
+  width: 100%;
+  padding: 0 0 0 1em;
+}
+
+.nav-item {
+  width: 90%;
+  border-bottom: solid 1px #6f6c6b;
+  padding: 1em;
+}
+
+.mb-link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  width: 90%;
+  padding-bottom: 0.1em;
+}
+
+.mblink-img {
+  align-self: center;
+  margin-top: 4em;
+  background: #0d151e;
+  border-radius: 5px;
 }
 
 .fa {
   color: #fff;
+}
+
+.fa-times {
+  color: #67798e;
+  font-size: 1.5rem;
 }
 
 .fa-bars {
@@ -524,19 +592,16 @@ button.footer-b:active {
     overflow: hidden;
   }
 
-  .open-toggle {
+  .fa-bars,
+  .fa-times {
     display: none;
   }
 
-  nav > ul {
+  .main-links {
     display: flex;
     align-items: center;
     color: #fff;
     gap: 2em;
-  }
-
-  nav > ul > li > a {
-    color: #fff;
   }
 
   .title {
