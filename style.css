@@ -607,7 +607,7 @@ button.footer-b:active {
   color: #344563;
 }
 
-@media (min-width: 768px) {
+hello @media (min-width: 768px) {
   nav {
     display: flex;
     align-items: center;
