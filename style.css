@@ -582,6 +582,31 @@ button.footer-b:active {
   border-radius: 10px;
 }
 
+.is-link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 12px;
+  color: black;
+  font-weight: 600;
+}
+
+.dsk-popup-img {
+  width: 100%;
+}
+
+.dsk-popup-title {
+  display: none;
+}
+
+.dsk-txt {
+  color: #344563;
+}
+
 @media (min-width: 768px) {
   nav {
     display: flex;
