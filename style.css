@@ -582,31 +582,6 @@ button.footer-b:active {
   border-radius: 10px;
 }
 
-.is-link {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  text-align: center;
-  justify-content: center;
-  margin-top: 20px;
-  border-radius: 8px;
-  padding: 12px;
-  color: black;
-  font-weight: 600;
-}
-
-.dsk-popup-img {
-  width: 100%;
-}
-
-.dsk-popup-title {
-  display: none;
-}
-
-.dsk-txt {
-  color: #344563;
-}
-
 @media (min-width: 768px) {
   nav {
     display: flex;
@@ -742,15 +717,15 @@ button.footer-b:active {
     margin-left: 0;
   }
 
-  .works-grid {
+  /* .works-grid {
     display: none;
-  }
+  } */
 
   .select {
     background: url(assets/background.png);
   }
 
-  .works-grid2 {
+  .works-grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -925,65 +900,102 @@ button.footer-b:active {
 
   /* desktop popup styles */
   .dsk-width {
-    height: fit-content;
-    width: 90%;
-    display: flex;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    display: none;
     justify-content: center;
+    border: 1px solid #ebecf0;
+    background-color: rgba(0, 0, 0, 0.8);
   }
+
   .desktop-popup {
+    width: 90%;
     display: flex;
     flex-direction: column;
     padding: 0 1.5em 1.5em 1.5em;
     gap: 1em;
-    margin-left: 6em;
     background: #fff;
-    border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    margin: 10% auto;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
+
   .dsk-popup-title {
     font-weight: 400;
-    font-size: 32px;
     line-height: 44px;
     color: #172b4d;
+    padding: 0;
+    margin: 0;
   }
-  .desktop-popup .fa-times {
-    display: block;
+
+  .close-btn {
     align-self: flex-end;
   }
+
+  .desktop-popup .fa-times {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .fa-times:hover,
+  .fa-times:focus {
+    cursor: pointer;
+  }
+
   .dsk-popup-links {
     display: flex;
-    width: 100%;
+    margin: 0;
     gap: 1em;
     padding: 0;
   }
+
   .dsk-popup-links > li > a {
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #3c3a39;
+    border: 1px solid #979493;
+    padding: 0.3em;
   }
+
   .image-text {
     display: flex;
     gap: 3em;
     align-items: flex-start;
   }
-  .dsk-popup-img {
+
+  /* .dsk-popup-img img {
     width: 50%;
-  }
+  } */
+
   .button-txt {
     display: flex;
     flex-direction: column;
   }
-  .dsk-txt {
+
+  .dsk-txt p {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     color: #344563;
   }
+
   .dsk-popup-buttons {
     display: flex;
     gap: 1em;
+  }
+  .dsk-popup-buttons button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #ff6b00;
+    padding: 0.5em;
+    margin: 0;
   }
 }
