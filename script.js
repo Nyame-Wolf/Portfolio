@@ -79,10 +79,10 @@ details.forEach((detail) => {
 
   document.querySelector(
     ".live"
-  ).innerHTML = `<button type="submit" class="is-link"><span>${detail.liveVersion}</span>    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+  ).innerHTML = `<button type="submit" class="is-link"><span class="popup-btn">${detail.liveVersion}</span>    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
 </span></button>`;
 
   document.querySelector(
     ".source"
-  ).innerHTML = `<button type="submit" class="is-link"><span>${detail.source}</span>    <span><i class="fa fa-github" aria-hidden="true"></span></button>`;
+  ).innerHTML = `<button type="submit" class="is-link"><span  class="popup-btn">${detail.source}</span>    <span><i class="fa fa-github" aria-hidden="true"></span></button>`;
 });
