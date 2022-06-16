@@ -239,6 +239,20 @@ p {
   position: relative;
 }
 
+form button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: 0 solid #fff;
+  margin-top: 1em;
+  padding: 1em;
+  margin-bottom: 4em;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .button-orange-sm button {
   font-style: normal;
   font-weight: 700;
@@ -250,13 +264,15 @@ p {
   margin: 0;
   width: 20%;
 }
+
 .works {
   display: flex;
   align-items: center;
   flex-direction: column;
   border: 1px solid black;
   margin-top: 1em;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -269,6 +285,7 @@ p {
 .works-description p {
   color: #fff;
 }
+
 .go-projects {
   width: 100%;
 }
@@ -324,9 +341,6 @@ h3 {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-}
-.small-mg a {
-  color: #fff;
 }
 
 .link-item li a {
@@ -552,20 +566,6 @@ textarea {
   width: 100%;
 }
 
-form button {
-  background-color: #ff6b00;
-  color: #fff;
-  border: 0 solid #fff;
-  margin-top: 1em;
-  padding: 1em;
-  margin-bottom: 4em;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .footer-hr {
   border: 1px solid #dfe1e6;
   display: block;
@@ -668,6 +668,7 @@ button.footer-b:active {
   gap: 3em;
   align-items: flex-start;
 }
+
 .dsk-popup-img img {
   width: 90%;
 }
@@ -688,6 +689,7 @@ button.footer-b:active {
   display: flex;
   gap: 1em;
 }
+
 .dsk-popup-buttons button {
   font-style: normal;
   font-weight: 700;
@@ -808,6 +810,13 @@ button.footer-b:active {
     width: 30%;
     align-items: flex-start;
   }
+
+  form button {
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+
   .button-orange-sm button {
     width: 40%;
   }
@@ -854,7 +863,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -899,7 +909,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         179.35deg,
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
@@ -913,7 +924,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         179.4deg,
         rgba(38, 38, 38, 0) 0.81%,
         rgba(38, 38, 38, 0.9) 84.03%
@@ -979,12 +991,6 @@ button.footer-b:active {
     width: 100%;
   }
 
-  form button {
-    align-self: flex-start;
-    margin-bottom: 0;
-    margin-top: 1em;
-  }
-
   .social-footer {
     width: 200px;
     height: 40px;
@@ -1009,6 +1015,10 @@ button.footer-b:active {
     }
   }
 
+  .dsk-popup-img img {
+    width: 90%;
+  }
+
   .sectionImg img:hover {
     transform: scale(0.5);
     background-color: #0d151e;
@@ -1018,23 +1028,21 @@ button.footer-b:active {
   /* desktop popup styles */
 
   .desktop-popup {
+    margin: 10% auto;
     width: 90%;
   }
-  .desktop-popup {
-    margin: 10% auto;
-  }
+
   .image-text {
     display: flex;
     flex-direction: row;
     gap: 3em;
     align-items: flex-start;
   }
+
   .dsk-popup-img {
     width: 400%;
   }
-  .dsk-popup-img img {
-    width: 90%;
-  }
+
   .popup-btn {
     padding: 0.2em;
   }
