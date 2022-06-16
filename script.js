@@ -13,23 +13,21 @@ mobileLinks.addEventListener("click", () => {
   mobileLinks.classList.toggle("open");
 });
 
-const email = document.getElementById("user-email").value;
-const errM = document.querySelector(".errorMessage");
-
-const message = "";
-myRegex = /[A-Z]/;
-
-
-const emailError = document.getElementById('footer-b')
-form.addEventListener('submit', (event) =>{
-
-})
-const form  = document.getElementById('dsk-form');
-
-form.addEventListener('submit', (event) => {
-  if (myRegex.test(email)) {
-    message = "Email field should only have <strong>lowercase</strong> letters";
+const myRegex = /[A-Z]/;
+const form = document.querySelector(".dsk-form");
+form.addEventListener("submit", (event) => {
+  const { email } = form.elements;
+  const emailEntered = email.value;
+  const errM = document.querySelector(".errorMessage");
+  console.log({ event, emailEntered });
+  if (myRegex.test(emailEntered) === true) {
     event.preventDefault();
+    const message =
+      "Email field should only have <strong>lowercase</strong> letters";
+    console.log(message);
+    errM.innerHTML = message;
   }
-    
+  //else {
+  //   form.submit();
+  // }
 });
