@@ -79,7 +79,7 @@ const buttonSmallTxt = document.createTextNode(`${articleOne.projectBtn}`);
 buttonSmall.type = "submit";
 buttonSmall.appendChild(buttonSmallTxt);
 buttonSm.appendChild(buttonSmall);
-buttonSmall.classList.add("is-link");
+buttonSmall.classList.add("is-link", "button-orange", "button-sm");
 
 // gridProjects
 const articles = [
