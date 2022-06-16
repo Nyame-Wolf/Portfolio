@@ -27,7 +27,7 @@
 - Twitter: [@twitterhandle](https://twitter.com/Mumenyam)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mumenya-nyamu-web-designer-data-enthusiast/)
 
-👤 **Author1**
+👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/Prisca-tech)
 
