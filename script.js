@@ -18,6 +18,18 @@ const errM = document.querySelector(".errorMessage");
 
 const message = "";
 myRegex = /[A-Z]/;
-if (myRegex.test(email)) {
-  message = "Email field should only have <strong>lowercase</strong> letters";
-}
+
+
+const emailError = document.getElementById('footer-b')
+form.addEventListener('submit', (event) =>{
+
+})
+const form  = document.getElementById('dsk-form');
+
+form.addEventListener('submit', (event) => {
+  if (myRegex.test(email)) {
+    message = "Email field should only have <strong>lowercase</strong> letters";
+    event.preventDefault();
+  }
+    
+});
