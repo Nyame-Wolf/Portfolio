@@ -238,6 +238,16 @@ p {
   align-items: flex-start;
 }
 
+.button-orange-sm button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  padding: 0.5em;
+  margin: 0;
+}
 .works {
   display: flex;
   align-items: center;
@@ -251,10 +261,14 @@ p {
     ),
     url(assets/background.png);
   width: 100%;
+  position: relative;
 }
 
-.works-p {
+.works-description p {
   color: #fff;
+}
+.go-projects {
+  width: 100%;
 }
 
 .works-description {
@@ -268,7 +282,7 @@ p {
   width: 100%;
 }
 
-.grid-title {
+.works-title h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
@@ -279,7 +293,7 @@ p {
   margin-bottom: 1em;
 }
 
-.grid-title-hr {
+.works-title hr {
   display: none;
 }
 
@@ -308,8 +322,7 @@ h3 {
   font-size: 15px;
   line-height: 20px;
 }
-
-.button-orange a {
+.small-mg a {
   color: #fff;
 }
 
@@ -356,6 +369,9 @@ h3 {
   padding: 0;
   height: 2.5em;
   margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .small-mg {
@@ -372,7 +388,6 @@ h4 {
 .works-grid2 {
   display: none;
 }
-
 .about {
   background: #1c1a19;
 }
@@ -794,7 +809,7 @@ button.footer-b:active {
     align-items: flex-start;
   }
 
-  .grid-title {
+  .works-title > h2 {
     border: none;
     text-align: left;
     display: flex;
@@ -808,7 +823,7 @@ button.footer-b:active {
     margin-top: 4em;
   }
 
-  .grid-title-hr {
+  .works-title hr {
     border: 1px solid #212121;
     display: inline-block;
     width: 70%;
@@ -994,7 +1009,7 @@ button.footer-b:active {
     }
   }
 
-  .image-animate:hover {
+  .sectionImg img:hover {
     transform: scale(0.5);
     background-color: #0d151e;
     transition-duration: 1s;
