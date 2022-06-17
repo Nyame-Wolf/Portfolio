@@ -271,8 +271,7 @@ form button {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 1em;
-  background:
-    linear-gradient(
+  background: linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -612,7 +611,7 @@ button.footer-b:active {
   height: 100%;
 }
 
-.desktop-popup {
+.popup {
   display: flex;
   flex-direction: column;
   padding: 0 1.5em 1.5em 1.5em;
@@ -622,7 +621,7 @@ button.footer-b:active {
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
-.dsk-popup-title {
+.popup-title {
   font-weight: 400;
   line-height: 44px;
   color: #172b4d;
@@ -634,7 +633,7 @@ button.footer-b:active {
   align-self: flex-end;
 }
 
-.desktop-popup .fa-times {
+.popup .fa-times {
   display: block;
   font-size: 1.5rem;
 }
@@ -644,14 +643,14 @@ button.footer-b:active {
   cursor: pointer;
 }
 
-.dsk-popup-links {
+.popup-links {
   display: flex;
   margin: 0;
   gap: 1em;
   padding: 0;
 }
 
-.dsk-popup-links > li > a {
+.popup-links > li > a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -669,7 +668,7 @@ button.footer-b:active {
   align-items: flex-start;
 }
 
-.dsk-popup-img img {
+.popup-img img {
   width: 90%;
 }
 
@@ -678,19 +677,19 @@ button.footer-b:active {
   flex-direction: column;
 }
 
-.dsk-txt p {
+.txt p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #344563;
 }
 
-.dsk-popup-buttons {
+.popup-buttons {
   display: flex;
   gap: 1em;
 }
 
-.dsk-popup-buttons button {
+.popup-buttons button {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -863,8 +862,7 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background:
-      linear-gradient(
+    background: linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -909,8 +907,7 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background:
-      linear-gradient(
+    background: linear-gradient(
         179.35deg,
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
@@ -924,8 +921,7 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background:
-      linear-gradient(
+    background: linear-gradient(
         179.4deg,
         rgba(38, 38, 38, 0) 0.81%,
         rgba(38, 38, 38, 0.9) 84.03%
@@ -1015,7 +1011,7 @@ button.footer-b:active {
     }
   }
 
-  .dsk-popup-img img {
+  .popup-img img {
     width: 90%;
   }
 
@@ -1027,7 +1023,7 @@ button.footer-b:active {
 
   /* desktop popup styles */
 
-  .desktop-popup {
+  .popup {
     margin: 10% auto;
     width: 90%;
   }
@@ -1039,7 +1035,7 @@ button.footer-b:active {
     align-items: flex-start;
   }
 
-  .dsk-popup-img {
+  .popup-img {
     width: 400%;
   }
 
