@@ -598,12 +598,15 @@ button.footer-b:active {
 
 /* mobile popup styles */
 .dsk-width {
+  display: none;
+}
+.dsk-width.openModel {
   position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
   overflow: auto;
-  display: none;
+  display: "block";
   justify-content: center;
   border: 1px solid #ebecf0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -613,7 +616,7 @@ button.footer-b:active {
 
 .popup {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 0 1.5em 1.5em 1.5em;
   gap: 1em;
   background: #fff;
@@ -634,6 +637,7 @@ button.footer-b:active {
   border: none;
   padding-top: 0.5em;
   background: #fff;
+  font-size: 1.5rem;
 }
 
 .popup .fa-times {

@@ -99,7 +99,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times;',
+    closeBtn: '&#x3A7',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -121,7 +121,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times;',
+    closeBtn: '&#x3A7',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -143,7 +143,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times;',
+    closeBtn: '&#x3A7',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -165,7 +165,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times;',
+    closeBtn: '&#x3A7',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -187,7 +187,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times;',
+    closeBtn: '&#x3A7',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -228,24 +228,19 @@ function createArticleLinks(techTags) {
 }
 // popup only items
 
-function image(imageD) {
+function image() {
   const img = document.createElement('img');
-  img.classList.add('popup-img');
-  img.textContent = imageD;
+  // img.classList.add('popup-img');
+  // img.textContent = imageD;
   return img;
 }
 
 function description(d) {
   const p = document.createElement('p');
-  // p.classList.add('dsk-popup-img');
   p.textContent = d;
   return p;
 }
-function closeB(b) {
-  const closeBtn = document.createElement('button');
-  closeBtn.classList.add('close-btn');
-  return closeBtn;
-}
+
 // popuponly items end
 function createH4(h) {
   const h4 = document.createElement('h4');
@@ -284,59 +279,6 @@ function createArticle(articleContent, index) {
   worksDescription.appendChild(links);
   worksDescription.appendChild(buttonOrange);
 
-  // popup things
-  const parentDiv = document.querySelector('.dsk-width');
-
-  const popUp = document.createElement('div');
-  popUp.classList.add('popup');
-
-  const closeButton = closeB();
-  closeButton.innerHTML = `<div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>`
-
-  const h4tagModal = createH4(articleContent.title);
-  h4tagModal.classList.add("popup-title");
-
-  const imageText = document.createElement('div');
-  imageText.classList.add('image-text');
-
-  const popUpimage = document.createElement('div');
-  popUpimage.classList.add('popup-img');
-  const imgC = image(articleContent.featuredImage);
-  imgC.src = articleContent.featuredImage.src;
-  imgC.alt = articleContent.featuredImage.alt;
-  popUpimage.appendChild(imgC);
-
-  const buttonText = document.createElement('div');
-  buttonText.classList.add('button-txt');
-  const des = description(articleContent.description);
-  des.classList.add('popup-txt');
-
-  const popupButtons = document.createElement('div');
-  popUpimage.classList.add('popup-buttons');
-
-  const popButtonLive = document.createElement('button');
-  popButtonLive.innerHTML = `<button type="submit" class="is-link"><span class="popup-btn">${articleContent.liveVersion}</span>    <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></button>`;
-  popButtonLive.classList.add('live');
-
-  const popButtonSource = document.createElement('button');
-  popButtonSource.innerHTML = `<button type="submit" class="is-link"><span  class="popup-btn">${articleContent.source}</span>    <span><i class="fa fa-github" aria-hidden="true"></span></button>`;
-  popButtonSource.classList.add('source');
-  popupButtons.appendChild(popButtonLive);
-  popupButtons.appendChild(popButtonSource);
-
-  buttonText.appendChild(des);
-  buttonText.appendChild(popupButtons);
-
-  imageText.appendChild(popUpimage);
-  imageText.appendChild(buttonText);
-  imageText.appendChild(popUpimage);
-
-  popUp.appendChild(h4tagModal);
-  popUp.appendChild(imageText);
-  popUp.appendChild(closeButton);
-  parentDiv.appendChild(popUp);
-  // popup things end
-
   article.appendChild(worksDescription);
 
   return article;
@@ -344,65 +286,87 @@ function createArticle(articleContent, index) {
 
 function createArticles(content) {
   const grid = document.querySelector('.works-grid');
-  const modal = document.querySelector('dsk-width');
 
   content.forEach((article, index) => {
-    const modalBtns = document.querySelectorAll('.button-orange');
-    const closeBtn = document.getElementsByClassName('close-btn')[0];
     const art = createArticle(article, index);
     grid.appendChild(art);
-
-    // modalBtns.forEach((modalBtn) => {
-    //   modalBtn.addEventListener('click', (event) => {
-    //     console.log({ event });
-    //     console.log(event.target.parentElement.parentElement.dataset);
-    //     if (index === event.target.parentElement.parentElement.dataset.index) {
-    //       modal.style.display.index = 'block';
-    //     }
-    //   });
-    // });
-    // closeBtn.addEventListener('click', () => {
-    //   modal.style.display = 'none';
-    // });
   });
 }
 
 createArticles(articles);
-console.log(articles)
-
-
-// function createPopup(content) {
-//   content.forEach((article, index) =>{
-//     const popDiv =
-//   })
-//   return ;
-// }
+console.log(articles);
 
 // modal popup
 const modal = document.querySelector('.dsk-width');
 const modalBtns = document.querySelectorAll('.button-orange');
-const closeBtns = document.querySelectorAll('close-btn');
-const getArticle = document.querySelectorAll("works-grid")
 
 modalBtns.forEach((modalBtn) => {
   modalBtn.addEventListener('click', (event) => {
-    const modal = document.querySelector('.dsk-width');
-    console.log({ event });
-    console.log(event.target.id);
-    function get1Item() {
-      for (let i = 0; i < getArticle.length; i += 1) {
-        if (i === event.target.parentElement.parentElement.dataset.index) {
-          modal.style.display = 'block';
-        }
+    const parentArticle = event.target.parentElement.parentElement;
+    const articleIndex = parentArticle.dataset.index;
+    const article = articles[articleIndex];
 
-      }
-    }
+    const popUp = document.createElement('div');
+    popUp.classList.add('popup');
 
-    // console.log(event.target.parentElement.parentElement.dataset.index);
+    const closeButton = document.createElement('button')
+    closeButton.innerHTML = `${(article.closeBtn)}`;
+    closeButton.classList.add("close-btn")
+
+    const h4tagModal = createH4()
+    h4tagModal.innerHTML = `<h4 class="popup-title">${article.title}</h4>`;
+
+    const imageText = document.createElement('div');
+    imageText.classList.add('image-text');
+
+    const popUpimage = document.createElement('div');
+    popUpimage.classList.add("popup-img")
+    const imgC = image()
+    imgC.innerHTML = ` <img src="${article.featuredImage.src}" alt="${article.featuredImage.alt}">`;
+    popUpimage.appendChild(imgC);
+
+    const buttonText = document.createElement('div');
+    buttonText.classList.add('button-txt');
+    const des = description(article.description);
+    des.classList.add('popup-txt');
+
+    const popupButtons = document.createElement('div');
+    popupButtons.classList.add('popup-buttons');
+
+    const popButtonLive = document.createElement('button');
+    popButtonLive.innerHTML = `<button type="submit" class="is-link popup-btn"><span>${article.liveVersion}</span>    <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></button>`;
+    popButtonLive.classList.add('live');
+
+    const popButtonSource = document.createElement('button');
+    popButtonSource.innerHTML = `<button type="submit" class="is-link popup-btn"><span>${article.source}</span>    <span><i class="fa fa-github" aria-hidden="true"></span></button>`;
+    popButtonSource.classList.add('source');
+    popupButtons.appendChild(popButtonLive);
+    popupButtons.appendChild(popButtonSource);
+
+    buttonText.appendChild(des);
+    buttonText.appendChild(popupButtons);
+
+    imageText.appendChild(popUpimage);
+    imageText.appendChild(buttonText);
+
+
+    // popUp.insertBefore(closeButton, h4tagModal);
+
+    ulLinks.innerHTML = createLinks(articleOne.technologyA1);
+    popUp.appendChild(closeButton);
+    popUp.appendChild(h4tagModal);
+    popUp.appendChild(imageText);
+
+
+    modal.appendChild(popUp);
+
+    modal.classList.toggle("openModel")
+    modal.style.display = 'block';
+
+    closeButton.addEventListener('click', () => {
+      modal.classList.toggle("openModel")
+      // modal.style.display = 'none';
+    })
   });
 });
-closeBtns.forEach((closeBtn) => {
-  closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-  });
-});
+
