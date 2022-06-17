@@ -10,7 +10,6 @@ openToggle.addEventListener('click', () => {
 mobileLinks.addEventListener('click', () => {
   openToggle.style.display = 'block';
   title.style.display = 'block';
-  mobileLinks.classList.toggle('open');
 });
 
 const myRegex = /[A-Z]/;
