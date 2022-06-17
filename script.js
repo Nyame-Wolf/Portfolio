@@ -77,7 +77,7 @@ buttonSmall.classList.add('is-link', 'button-orange', 'button-sm');
 const articles = [
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times',
+    closeBtn: '&times;',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -99,7 +99,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times',
+    closeBtn: '&times;',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -121,7 +121,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times',
+    closeBtn: '&times;',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -143,7 +143,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times',
+    closeBtn: '&times;',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -165,7 +165,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times',
+    closeBtn: '&times;',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -187,7 +187,7 @@ const articles = [
   },
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times',
+    closeBtn: '&times;',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
@@ -237,14 +237,13 @@ function image(imageD) {
 
 function description(d) {
   const p = document.createElement('p');
-  p.classList.add('dsk-popup-img');
+  // p.classList.add('dsk-popup-img');
   p.textContent = d;
   return p;
 }
 function closeB(b) {
   const closeBtn = document.createElement('button');
   closeBtn.classList.add('close-btn');
-  closeBtn.textContent = b;
   return closeBtn;
 }
 // popuponly items end
@@ -290,7 +289,12 @@ function createArticle(articleContent, index) {
 
   const popUp = document.createElement('div');
   popUp.classList.add('popup');
-  const closeButton = closeB(articleContent.closeBtn);
+
+  const closeButton = closeB();
+  closeButton.innerHTML = `<div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>`
+
+  const h4tagModal = createH4(articleContent.title);
+  h4tagModal.classList.add("popup-title");
 
   const imageText = document.createElement('div');
   imageText.classList.add('image-text');
@@ -327,8 +331,9 @@ function createArticle(articleContent, index) {
   imageText.appendChild(buttonText);
   imageText.appendChild(popUpimage);
 
-  // popUp.appendChild(closeButton);
+  popUp.appendChild(h4tagModal);
   popUp.appendChild(imageText);
+  popUp.appendChild(closeButton);
   parentDiv.appendChild(popUp);
   // popup things end
 
@@ -347,22 +352,24 @@ function createArticles(content) {
     const art = createArticle(article, index);
     grid.appendChild(art);
 
-    modalBtns.forEach((modalBtn) => {
-      modalBtn.addEventListener('click', (event) => {
-        console.log({ event });
-        console.log(event.target.parentElement.parentElement.dataset);
-        if (index === event.target.parentElement.parentElement.dataset.index) {
-          modal.style.display = 'block';
-        }
-      });
-    });
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
+    // modalBtns.forEach((modalBtn) => {
+    //   modalBtn.addEventListener('click', (event) => {
+    //     console.log({ event });
+    //     console.log(event.target.parentElement.parentElement.dataset);
+    //     if (index === event.target.parentElement.parentElement.dataset.index) {
+    //       modal.style.display.index = 'block';
+    //     }
+    //   });
+    // });
+    // closeBtn.addEventListener('click', () => {
+    //   modal.style.display = 'none';
+    // });
   });
 }
 
 createArticles(articles);
+console.log(articles)
+
 
 // function createPopup(content) {
 //   content.forEach((article, index) =>{
@@ -372,17 +379,30 @@ createArticles(articles);
 // }
 
 // modal popup
-// const modal = document.querySelector('.dsk-width');
-// const modalBtns = document.querySelectorAll('.button-orange');
-// const closeBtn = document.getElementsByClassName('close-btn')[0];
+const modal = document.querySelector('.dsk-width');
+const modalBtns = document.querySelectorAll('.button-orange');
+const closeBtns = document.querySelectorAll('close-btn');
+const getArticle = document.querySelectorAll("works-grid")
 
-// modalBtns.forEach((modalBtn) => {
-//   modalBtn.addEventListener('click', (event) => {
-//     console.log({ event });
-//     console.log(event.target.parentElement.parentElement.dataset.index);
-//     modal.style.display = 'block';
-//   });
-// });
-// closeBtn.addEventListener('click', () => {
-//   modal.style.display = 'none';
-// });
+modalBtns.forEach((modalBtn) => {
+  modalBtn.addEventListener('click', (event) => {
+    const modal = document.querySelector('.dsk-width');
+    console.log({ event });
+    console.log(event.target.id);
+    function get1Item() {
+      for (let i = 0; i < getArticle.length; i += 1) {
+        if (i === event.target.parentElement.parentElement.dataset.index) {
+          modal.style.display = 'block';
+        }
+
+      }
+    }
+
+    // console.log(event.target.parentElement.parentElement.dataset.index);
+  });
+});
+closeBtns.forEach((closeBtn) => {
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+});
