@@ -258,11 +258,10 @@ form button {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #fff;
-  background-color: #ff6b00;
+  color: #5b5957;
+  background: #f4f1f0;
   padding: 0.5em;
   margin: 0;
-  width: 20%;
 }
 
 .works {
@@ -271,7 +270,8 @@ form button {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 1em;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -600,13 +600,14 @@ button.footer-b:active {
 .dsk-width {
   display: none;
 }
+
 .dsk-width.openModel {
   position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
   overflow: auto;
-  display: "block";
+  display: block;
   justify-content: center;
   border: 1px solid #ebecf0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -823,10 +824,6 @@ button.footer-b:active {
     margin-top: 1em;
   }
 
-  .button-orange-sm button {
-    width: 40%;
-  }
-
   .works-title > h2 {
     border: none;
     text-align: left;
@@ -869,7 +866,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
         rgba(38, 38, 38, 0.9) 61.94%
@@ -914,7 +912,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         179.35deg,
         rgba(38, 38, 38, 0) 0.85%,
         rgba(38, 38, 38, 0.9) 84%
@@ -928,7 +927,8 @@ button.footer-b:active {
     flex-direction: column;
     border: 1px solid black;
     margin: 1em;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         179.4deg,
         rgba(38, 38, 38, 0) 0.81%,
         rgba(38, 38, 38, 0.9) 84.03%

@@ -71,7 +71,7 @@ const buttonSmallTxt = document.createTextNode(`${articleOne.projectBtn}`);
 buttonSmall.type = 'submit';
 buttonSmall.appendChild(buttonSmallTxt);
 buttonSm.appendChild(buttonSmall);
-buttonSmall.classList.add('is-link', 'button-orange', 'button-sm');
+buttonSmall.classList.add('is-link', 'button-sm');
 
 // gridProjects
 const articles = [
@@ -230,8 +230,6 @@ function createArticleLinks(techTags) {
 
 function image() {
   const img = document.createElement('img');
-  // img.classList.add('popup-img');
-  // img.textContent = imageD;
   return img;
 }
 
@@ -294,7 +292,6 @@ function createArticles(content) {
 }
 
 createArticles(articles);
-console.log(articles);
 
 // modal popup
 const modal = document.querySelector('.dsk-width');
@@ -309,23 +306,23 @@ modalBtns.forEach((modalBtn) => {
     const popUp = document.createElement('div');
     popUp.classList.add('popup');
 
-    const closeButton = document.createElement('button')
+    const closeButton = document.createElement('button');
     closeButton.innerHTML = `${(article.closeBtn)}`;
-    closeButton.classList.add("close-btn")
+    closeButton.classList.add('close-btn');
 
-    const h4tagModal = createH4()
+    const h4tagModal = createH4();
     h4tagModal.innerHTML = `<h4 class="popup-title">${article.title}</h4>`;
 
     const links = createArticleLinks(article.technologyArticle);
-    links.classList.remove("button-dark", "link-item")
-    links.classList.add("popup-links")
+    links.classList.remove('button-dark', 'link-item');
+    links.classList.add('popup-links');
 
     const imageText = document.createElement('div');
     imageText.classList.add('image-text');
 
     const popUpimage = document.createElement('div');
-    popUpimage.classList.add("popup-img")
-    const imgC = image(article.featuredImage)
+    popUpimage.classList.add('popup-img');
+    const imgC = image(article.featuredImage);
     imgC.src = article.featuredImage.src;
     imgC.alt = article.featuredImage.alt;
     popUpimage.appendChild(imgC);
@@ -361,16 +358,13 @@ modalBtns.forEach((modalBtn) => {
 
     modal.appendChild(popUp);
 
-    modal.classList.add("openModel")
+    modal.classList.add('openModel');
     modal.style.display = 'block';
 
-
-
     closeButton.addEventListener('click', () => {
-      modal.classList.remove("openModel")
+      modal.classList.remove('openModel');
+      popUp.remove();
       modal.style.display = 'none';
     });
-    event.preventDefault()
   });
 });
-
