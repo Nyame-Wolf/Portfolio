@@ -13,31 +13,14 @@ mobileLinks.addEventListener('click', () => {
   mobileLinks.classList.toggle('open');
 });
 
-/* grid first article */
-function createLinks(array) {
-  let list = '';
-  array.forEach((item) => {
-    list += `<li> <a  class="is-link" href="#">${item}</a></li>`;
-  });
-  return list;
-}
 const articleOne = {
   sectionTitle: 'My Recent Works',
   sectionImage: {
     src: 'assets/ImgPlaceholder@2x.png',
     alt: 'section image',
   },
-  articleOneTitle: 'Multi-Post Stories',
-  itemParagraph: `A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.`,
-  technologyA1: ['css', 'html', 'bootstrap', 'Ruby'],
-  projectBtn: 'See Project',
 };
-
 const sTitle = document.querySelector('.works-title');
-const article1Title = document.querySelector('.item1-description');
 
 const sPopupTitle = document.createElement('H2');
 const titleHr = document.createElement('hr');
@@ -50,31 +33,35 @@ const imageItem1 = document.createElement('IMG');
 imageItem1.setAttribute('src', articleOne.sectionImage.src);
 imageItem1.setAttribute('alt', articleOne.sectionImage.src);
 document.querySelector('.sectionImg').appendChild(imageItem1);
-const ulLinks = document.querySelector('.button-light');
-
-const a1Title = document.createElement('h3');
-const aTitleTxt = document.createTextNode(`${articleOne.articleOneTitle}`);
-a1Title.appendChild(aTitleTxt);
-article1Title.insertBefore(a1Title, ulLinks);
-
-const a1P = document.createElement('p');
-const a1PTxt = document.createTextNode(`${articleOne.itemParagraph}`);
-a1P.appendChild(a1PTxt);
-article1Title.insertBefore(a1P, ulLinks);
-
-ulLinks.innerHTML = createLinks(articleOne.technologyA1);
-
-const buttonSm = document.querySelector('.button-orange-sm');
-
-const buttonSmall = document.createElement('button');
-const buttonSmallTxt = document.createTextNode(`${articleOne.projectBtn}`);
-buttonSmall.type = 'submit';
-buttonSmall.appendChild(buttonSmallTxt);
-buttonSm.appendChild(buttonSmall);
-buttonSmall.classList.add('is-link', 'button-sm');
 
 // gridProjects
 const articles = [
+  {
+
+    title: 'Multi-Post Stories',
+    closeBtn: '&#x3A7',
+    paragraph: `A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.`,
+    featuredImage: {
+      src: 'assets/Snapshoot Portfolio.png',
+      alt: 'featured image',
+    },
+    technologyArticle: ['css', 'html', 'bootstrap', 'Ruby'],
+    prjBtn: 'See Project',
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it 1960s with the releaLorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it
+              1960s with the releax map lapora verita.`,
+    liveVersion: 'See live',
+    source: 'See Source',
+  },
+
   {
     title: 'Profesional Art Printing Data',
     closeBtn: '&#x3A7',
@@ -262,6 +249,7 @@ function createButton(cbutton) {
 function createArticle(articleContent, index) {
   const article = document.createElement('article');
   article.classList.add('works');
+  article.classList.add('bkg');
   article.setAttribute('data-index', index);
 
   const worksDescription = document.createElement('div');
@@ -281,10 +269,9 @@ function createArticle(articleContent, index) {
 
   return article;
 }
+const grid = document.querySelector('.works-grid');
 
 function createArticles(content) {
-  const grid = document.querySelector('.works-grid');
-
   content.forEach((article, index) => {
     const art = createArticle(article, index);
     grid.appendChild(art);
@@ -292,6 +279,10 @@ function createArticles(content) {
 }
 
 createArticles(articles);
+
+const a = document.querySelector('.item1-description');
+
+a.appendChild(grid.firstChild);
 
 // modal popup
 const modal = document.querySelector('.dsk-width');
