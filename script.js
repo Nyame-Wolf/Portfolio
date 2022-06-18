@@ -316,13 +316,18 @@ modalBtns.forEach((modalBtn) => {
     const h4tagModal = createH4()
     h4tagModal.innerHTML = `<h4 class="popup-title">${article.title}</h4>`;
 
+    const links = createArticleLinks(article.technologyArticle);
+    links.classList.remove("button-dark", "link-item")
+    links.classList.add("popup-links")
+
     const imageText = document.createElement('div');
     imageText.classList.add('image-text');
 
     const popUpimage = document.createElement('div');
     popUpimage.classList.add("popup-img")
-    const imgC = image()
-    imgC.innerHTML = ` <img src="${article.featuredImage.src}" alt="${article.featuredImage.alt}">`;
+    const imgC = image(article.featuredImage)
+    imgC.src = article.featuredImage.src;
+    imgC.alt = article.featuredImage.alt;
     popUpimage.appendChild(imgC);
 
     const buttonText = document.createElement('div');
@@ -349,24 +354,23 @@ modalBtns.forEach((modalBtn) => {
     imageText.appendChild(popUpimage);
     imageText.appendChild(buttonText);
 
-
-    // popUp.insertBefore(closeButton, h4tagModal);
-
-    ulLinks.innerHTML = createLinks(articleOne.technologyA1);
     popUp.appendChild(closeButton);
     popUp.appendChild(h4tagModal);
+    popUp.appendChild(links);
     popUp.appendChild(imageText);
-
 
     modal.appendChild(popUp);
 
-    modal.classList.toggle("openModel")
+    modal.classList.add("openModel")
     modal.style.display = 'block';
 
+
+
     closeButton.addEventListener('click', () => {
-      modal.classList.toggle("openModel")
-      // modal.style.display = 'none';
-    })
+      modal.classList.remove("openModel")
+      modal.style.display = 'none';
+    });
+    event.preventDefault()
   });
 });
 
