@@ -3,7 +3,7 @@
 # Portfolio
 
 > Project Description.
-> **This is my Portfolio project created using html and css. It is responsive for both desktop and mobile. It uses media queries, css-grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It also uses javascript objects to load data about content page. It uses a figma template 2 from microverse student portal..**
+> **This is my Portfolio project created using html and css. It is responsive for both desktop and mobile. It uses media queries, css-grid and flex-box to display the html page. It contains headline, works and about sections and a contact form. It also uses javascript objects to load data for content page. It also uses javascript to activate a popup detail. It uses a figma template 2 from microverse student portal..**
 
 ## Built With
 
