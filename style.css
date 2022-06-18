@@ -232,10 +232,29 @@ p {
   color: #091e42;
 }
 
-.item1-description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+form button {
+  background-color: #ff6b00;
+  color: #fff;
+  border: 0 solid #fff;
+  margin-top: 1em;
+  padding: 1em;
+  margin-bottom: 4em;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-orange-sm button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #5b5957;
+  background: #f4f1f0;
+  padding: 0.5em;
+  margin: 0;
 }
 
 .works {
@@ -244,6 +263,11 @@ p {
   flex-direction: column;
   border: 1px solid black;
   margin-top: 1em;
+  width: 100%;
+  position: relative;
+}
+
+.bkg {
   background:
     linear-gradient(
       180.45deg,
@@ -251,11 +275,22 @@ p {
       rgba(38, 38, 38, 0.9) 61.94%
     ),
     url(assets/background.png);
-  width: 100%;
 }
 
-.works-p {
+.item1-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+}
+
+.works-description p {
   color: #fff;
+}
+
+.go-projects {
+  width: 100%;
 }
 
 .works-description {
@@ -269,7 +304,11 @@ p {
   width: 100%;
 }
 
-.grid-title {
+.cchange {
+  color: #091e42;
+}
+
+.works-title h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
@@ -280,7 +319,7 @@ p {
   margin-bottom: 1em;
 }
 
-.grid-title-hr {
+.works-title hr {
   display: none;
 }
 
@@ -297,6 +336,7 @@ h3 {
   display: flex;
   padding: 0;
   gap: 1.5em;
+  padding-bottom: 2.5em;
 }
 
 .small-mg a {
@@ -308,10 +348,6 @@ h3 {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-}
-
-.button-orange a {
-  color: #fff;
 }
 
 .link-item li a {
@@ -357,6 +393,9 @@ h3 {
   padding: 0;
   height: 2.5em;
   margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .small-mg {
@@ -368,10 +407,6 @@ h4 {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-}
-
-.works-grid2 {
-  display: none;
 }
 
 .about {
@@ -538,20 +573,6 @@ textarea {
   width: 100%;
 }
 
-form button {
-  background-color: #ff6b00;
-  color: #fff;
-  border: 0 solid #fff;
-  margin-top: 1em;
-  padding: 1em;
-  margin-bottom: 4em;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .footer-hr {
   border: 1px solid #dfe1e6;
   display: block;
@@ -583,14 +604,116 @@ button.footer-b:active {
   border-radius: 10px;
 }
 
-.errorMessage {
-  background: #e05304;
-  color: #f4f1f0;
-  margin-top: 1em;
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.5em;
+/* mobile popup styles */
+.dsk-width {
   display: none;
+}
+
+.dsk-width.openModel {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  display: block;
+  justify-content: center;
+  border: 1px solid #ebecf0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5em 1.5em 1.5em;
+  gap: 1em;
+  background: #fff;
+  margin: 10%;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.popup-title {
+  font-weight: 400;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 0;
+  margin: 0;
+}
+
+.close-btn {
+  align-self: flex-end;
+  border: none;
+  padding-top: 0.5em;
+  background: #fff;
+  font-size: 1.5rem;
+}
+
+.popup .fa-times {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.fa-times:hover,
+.fa-times:focus {
+  cursor: pointer;
+}
+
+.popup-links {
+  display: flex;
+  margin: 0;
+  gap: 1em;
+  padding: 0;
+}
+
+.popup-links > li > a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3c3a39;
+  border: 1px solid #979493;
+  padding: 0.3em;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: flex-start;
+}
+
+.popup-img img {
+  width: 90%;
+}
+
+.button-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.popup-btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  padding: 0.5em;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -695,15 +818,21 @@ button.footer-b:active {
   }
 
   .item1 img {
-    width: 60%;
+    width: 90%;
   }
 
   .item1-description {
-    width: 30%;
+    width: 50%;
     align-items: flex-start;
   }
 
-  .grid-title {
+  form button {
+    align-self: flex-start;
+    margin-bottom: 0;
+    margin-top: 1em;
+  }
+
+  .works-title > h2 {
     border: none;
     text-align: left;
     display: flex;
@@ -717,7 +846,7 @@ button.footer-b:active {
     margin-top: 4em;
   }
 
-  .grid-title-hr {
+  .works-title hr {
     border: 1px solid #212121;
     display: inline-block;
     width: 70%;
@@ -728,18 +857,15 @@ button.footer-b:active {
     margin-left: 0;
   }
 
-  .works-grid {
-    display: none;
-  }
-
   .select {
     background: url(assets/background.png);
   }
 
-  .works-grid2 {
+  .works-grid {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1em;
   }
 
   .works-2-row1 {
@@ -876,12 +1002,6 @@ button.footer-b:active {
     width: 100%;
   }
 
-  form button {
-    align-self: flex-start;
-    margin-bottom: 0;
-    margin-top: 1em;
-  }
-
   .social-footer {
     width: 200px;
     height: 40px;
@@ -906,9 +1026,35 @@ button.footer-b:active {
     }
   }
 
-  .image-animate:hover {
+  .popup-img img {
+    width: 90%;
+  }
+
+  .sectionImg img:hover {
     transform: scale(0.5);
     background-color: #0d151e;
     transition-duration: 1s;
+  }
+
+  /* desktop popup styles */
+
+  .popup {
+    margin: 10% auto;
+    width: 90%;
+  }
+
+  .image-text {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    align-items: flex-start;
+  }
+
+  .popup-img {
+    width: 400%;
+  }
+
+  .popup-btn {
+    padding: 0.2em;
   }
 }
