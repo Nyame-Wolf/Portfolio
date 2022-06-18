@@ -77,7 +77,7 @@ buttonSmall.classList.add('is-link', 'button-orange', 'button-sm');
 const articles = [
   {
     title: 'Profesional Art Printing Data',
-    closeBtn: '&times;',
+    closeBtn: '&#x3A7',
     paragraph: `A daily selection of privately personalized reads; no accounts
                 or sign-ups required. has been the industry's standard`,
     featuredImage: {
