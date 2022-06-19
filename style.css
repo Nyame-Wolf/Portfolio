@@ -621,6 +621,16 @@ textarea {
   gap: 1em;
 }
 
+.errorMessage {
+  background: #e05304;
+  color: #f4f1f0;
+  margin-top: 1em;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5em;
+  display: none;
+}
+
 button.footer-b:active {
   border: 1px solid #8993a4;
   color: #f55800;
