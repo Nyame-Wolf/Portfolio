@@ -256,7 +256,7 @@ function createp(para) {
 
 function createButton(cbutton) {
   const button = document.createElement('button');
-  button.classList.add('button-orange', 'is-link');
+  button.classList.add('button-orange', 'is-link', 'grid-buttons');
   button.textContent = cbutton;
   return button;
 }
@@ -268,7 +268,7 @@ function createArticle(articleContent, index) {
   article.setAttribute('data-index', index);
 
   const worksDescription = document.createElement('div');
-  worksDescription.classList.add('works-description');
+  worksDescription.classList.add('works-description', 'add-padding');
 
   const h4tag = createH4(articleContent.title);
   const para = createp(articleContent.paragraph);
@@ -296,6 +296,16 @@ function createArticles(content) {
 createArticles(articles);
 
 const a = document.querySelector('.item1-description');
+const rmBkg = document.querySelectorAll('.works')[0];
+rmBkg.classList.toggle('bkg');
+rmBkg.classList.add('cchange');
+const article1Ul = rmBkg.querySelector('ul');
+article1Ul.classList.add('button-light');
+const article1Btn = rmBkg.querySelector('button');
+article1Btn.classList.toggle('grid-buttons');
+article1Btn.classList.add('button-orange-sm');
+const article1div = rmBkg.querySelector('div');
+article1div.classList.toggle('add-padding');
 
 a.appendChild(grid.firstChild);
 
