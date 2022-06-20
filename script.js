@@ -295,6 +295,8 @@ function createArticles(content) {
 
 createArticles(articles);
 
+// article 1 styles:
+
 const a = document.querySelector('.item1-description');
 const rmBkg = document.querySelectorAll('.works')[0];
 rmBkg.classList.toggle('bkg');

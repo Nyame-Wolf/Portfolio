@@ -256,7 +256,7 @@ form button {
 }
 
 .button-orange-sm {
-  width: 20%;
+  width: fit-content;
   padding: 0.5em;
 }
 
@@ -286,6 +286,7 @@ form button {
   align-items: flex-start;
   position: relative;
   background: rgba(255, 255, 255, 0);
+  width: 100%;
 }
 
 .works-description p {
@@ -885,10 +886,6 @@ button.footer-b:active {
 
   .select {
     background: url(assets/background.png);
-  }
-
-  .button-orange-sm {
-    padding: 0;
   }
 
   .works-grid {
