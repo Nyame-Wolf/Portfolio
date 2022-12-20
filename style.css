@@ -73,6 +73,7 @@ nav {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .main-links,
@@ -270,13 +271,7 @@ form button {
 }
 
 .bkg {
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(assets/background.png);
+  background: #091e42;
   border: 1px solid black;
 }
 
@@ -308,7 +303,8 @@ form button {
 }
 
 .item1 img {
-  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .small-mg a {
@@ -476,7 +472,6 @@ h3 {
   color: #fff;
   background-color: #ff6b00;
   width: 20%;
-  padding: 0.5em;
 }
 
 .left {
@@ -845,7 +840,7 @@ button.footer-b:active {
   }
 
   .item1 img {
-    width: 90%;
+    width: 70%;
   }
 
   .item1-description {

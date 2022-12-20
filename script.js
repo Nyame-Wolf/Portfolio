@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) => {
 const articleOne = {
   sectionTitle: 'My Recent Works',
   sectionImage: {
-    src: 'assets/ImgPlaceholder@2x.png',
+    src: 'assets/Screenshot 2022-12-20 at 01.10.46.png',
     alt: 'section image',
   },
 };
@@ -52,162 +52,135 @@ document.querySelector('.sectionImg').appendChild(imageItem1);
 // gridProjects
 const articles = [
   {
-
-    title: 'Multi-Post Stories',
+    title: 'Crypto Prism',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.`,
+    paragraph: `This metric app uses the coinlore api to display a list of crypto 
+    currencies with their current price. It has a detail page that shows details 
+    such as crypto symbol and its percentage daily change. `,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/Screenshot 2022-12-20 at 01.10.46.png',
       alt: 'featured image',
     },
-    technologyArticle: ['css', 'html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['Css', 'Html', 'React', 'Redux'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `This metric app uses the coinlore api to display a list of crypto 
+    currencies with their current price. It has a detail page that shows details 
+    such as crypto symbol and its percentage daily change.`,
+    liveVersion: '<a href="https://crypto-prism.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href="https://github.com/Nyame-Wolf/crypto-prism" target="_blank" rel="noreferrer">See Source</a>',
   },
 
   {
-    title: 'Profesional Art Printing Data',
+    title: 'MovieFlix',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard`,
+    paragraph: `This is a web application that consumes the tvmaze API. 
+    It shows a list of 240 popular, TV shows . It allows users to add a 
+    comment about the movie as well as click on the like button if they 
+    enjoyed it`,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/movieflix.png',
       alt: 'featured image',
     },
-    technologyArticle: ['html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['html', 'css', 'Javascript'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `This is a web application that consumes the tvmaze API. 
+    It shows a list of 240 popular, TV shows . It allows users to add a 
+    comment about the movie as well as click on the like button if they 
+    enjoyed it`,
+    liveVersion: '<a href="https://nyame-wolf.github.io/movie-app/dist/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href="https://github.com/Nyame-Wolf/movie-app" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'Budget App',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard`,
+    paragraph: `This app lets you manage your spending. You can add a 
+    category of items you want to spend and the app aggregates your net 
+    spend`,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/categories.png',
       alt: 'featured image',
     },
-    technologyArticle: ['html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['html', 'Ruby on Rails', 'Ruby'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `This app lets you manage your spending. You can add a 
+    category of items you want to spend and the app aggregates your net 
+    spend`,
+    liveVersion: '<a href="https://budgetup.onrender.com/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href="https://github.com/Nyame-Wolf/budget-app" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'Todo List',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard`,
+    paragraph: `This is a todo list created using webpack and vanilla javascript. 
+    It lets a user add and remove to do items. It contains testing suite 
+    using jest framework`,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/todo.png',
       alt: 'featured image',
     },
-    technologyArticle: ['html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['html', 'Javascript', 'Css'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `This is a todo list created using webpack and vanilla javascript. 
+    It lets a user add and remove to do items. It contains testing suite 
+    using jest framework`,
+    liveVersion: '<a href="https://nyame-wolf.github.io/To-Do-list/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href="https://github.com/Nyame-Wolf/To-Do-list" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'Space Missions',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard`,
+    paragraph: `This project is a web application that consumes the SpaceX API. It 
+    provides commercial and scientific space travel services that allows users to 
+    book rockets and join selected space missions`,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/rockets.png',
       alt: 'featured image',
     },
-    technologyArticle: ['html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['html', 'React', 'css'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `This project is a web application that consumes the SpaceX API. It 
+    provides commercial and scientific space travel services that allows users to 
+    book rockets and join selected space missions.`,
+    liveVersion: '<a href=" https://space-traverlers-raminka-nyame.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href=" https://github.com/Nyame-Wolf/space-missions" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'Exploration Getaways',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard`,
+    paragraph: `Exploration Getaways is a travelling application where 
+    the user can register new accounts, login and book a set of different 
+    trip packages. It is built and connected by using two different repos, 
+    including back-end(Rails) and front-end(React/Redux)`,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/readme4.jpg',
       alt: 'featured image',
     },
-    technologyArticle: ['html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['html', 'React', 'css', 'Ruby on Rails'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `Exploration Getaways is a travelling application where 
+    the user can register new accounts, login and book a set of different 
+    trip packages. It is built and connected by using two different repos, 
+    including back-end(Rails) and front-end(React/Redux)`,
+    liveVersion: '<a href=" https://exploration-getaways.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href=" https://github.com/Nyame-Wolf/Exploration-Getaways-FRONTEND" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
-    title: 'Profesional Art Printing Data',
+    title: 'Holistic Med Annual Conference',
     closeBtn: '&#x3A7',
-    paragraph: `A daily selection of privately personalized reads; no accounts
-                or sign-ups required. has been the industry's standard`,
+    paragraph: `This is inspired by 2015 by Cindy Shin ccGlobal Korea. 
+    It is a website for an imaginary annual holistic medicine conference. 
+    It is made using plain vanilla javascript, HTML and css.`,
     featuredImage: {
-      src: 'assets/Snapshoot Portfolio.png',
+      src: 'assets/holistic-med.png',
       alt: 'featured image',
     },
-    technologyArticle: ['html', 'bootstrap', 'Ruby'],
+    technologyArticle: ['html', 'css', 'Javascript'],
     prjBtn: 'See Project',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it 1960s with the releaLorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it
-              1960s with the releax map lapora verita.`,
-    liveVersion: 'See live',
-    source: 'See Source',
+    description: `This is inspired by 2015 by Cindy Shin ccGlobal Korea. 
+    It is a website for an imaginary annual holistic medicine conference. 
+    It is made using plain vanilla javascript, HTML and css.`,
+    liveVersion: '<a href=" https://nyame-wolf.github.io/Holistic-Med-Annual-Meetup/" target="_blank" rel="noreferrer">See live</a>',
+    source: '<a href=" https://github.com/Nyame-Wolf/Holistic-Med-Annual-Meetup" target="_blank" rel="noreferrer">See Source</a>',
   },
 ];
 
@@ -325,7 +298,7 @@ modalBtns.forEach((modalBtn) => {
     popUp.classList.add('popup');
 
     const closeButton = document.createElement('button');
-    closeButton.innerHTML = `${(article.closeBtn)}`;
+    closeButton.innerHTML = `${article.closeBtn}`;
     closeButton.classList.add('close-btn');
 
     const h4tagModal = createH4();
