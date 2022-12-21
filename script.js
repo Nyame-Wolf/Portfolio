@@ -121,7 +121,7 @@ const articles = [
     It lets a user add and remove to do items. It contains testing suite 
     using jest framework`,
     featuredImage: {
-      src: 'assets/todo.png',
+      src: 'assets/todoedit.png',
       alt: 'featured image',
     },
     technologyArticle: ['html', 'Javascript', 'Css'],
