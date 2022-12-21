@@ -66,8 +66,10 @@ const articles = [
     description: `This metric app uses the coinlore api to display a list of crypto 
     currencies with their current price. It has a detail page that shows details 
     such as crypto symbol and its percentage daily change.`,
-    liveVersion: '<a href="https://crypto-prism.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href="https://github.com/Nyame-Wolf/crypto-prism" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href="https://crypto-prism.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href="https://github.com/Nyame-Wolf/crypto-prism" target="_blank" rel="noreferrer">See Source</a>',
   },
 
   {
@@ -87,8 +89,10 @@ const articles = [
     It shows a list of 240 popular, TV shows . It allows users to add a 
     comment about the movie as well as click on the like button if they 
     enjoyed it`,
-    liveVersion: '<a href="https://nyame-wolf.github.io/movie-app/dist/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href="https://github.com/Nyame-Wolf/movie-app" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href="https://nyame-wolf.github.io/movie-app/dist/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href="https://github.com/Nyame-Wolf/movie-app" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
     title: 'Budget App',
@@ -97,7 +101,7 @@ const articles = [
     category of items you want to spend and the app aggregates your net 
     spend`,
     featuredImage: {
-      src: 'assets/categories.png',
+      src: 'assets/budget.jpg',
       alt: 'featured image',
     },
     technologyArticle: ['html', 'Ruby on Rails', 'Ruby'],
@@ -105,8 +109,10 @@ const articles = [
     description: `This app lets you manage your spending. You can add a 
     category of items you want to spend and the app aggregates your net 
     spend`,
-    liveVersion: '<a href="https://budgetup.onrender.com/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href="https://github.com/Nyame-Wolf/budget-app" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href="https://budgetup.onrender.com/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href="https://github.com/Nyame-Wolf/budget-app" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
     title: 'Todo List',
@@ -123,8 +129,10 @@ const articles = [
     description: `This is a todo list created using webpack and vanilla javascript. 
     It lets a user add and remove to do items. It contains testing suite 
     using jest framework`,
-    liveVersion: '<a href="https://nyame-wolf.github.io/To-Do-list/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href="https://github.com/Nyame-Wolf/To-Do-list" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href="https://nyame-wolf.github.io/To-Do-list/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href="https://github.com/Nyame-Wolf/To-Do-list" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
     title: 'Space Missions',
@@ -141,8 +149,10 @@ const articles = [
     description: `This project is a web application that consumes the SpaceX API. It 
     provides commercial and scientific space travel services that allows users to 
     book rockets and join selected space missions.`,
-    liveVersion: '<a href=" https://space-traverlers-raminka-nyame.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href=" https://github.com/Nyame-Wolf/space-missions" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href=" https://space-traverlers-raminka-nyame.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href=" https://github.com/Nyame-Wolf/space-missions" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
     title: 'Exploration Getaways',
@@ -152,7 +162,7 @@ const articles = [
     trip packages. It is built and connected by using two different repos, 
     including back-end(Rails) and front-end(React/Redux)`,
     featuredImage: {
-      src: 'assets/readme4.jpg',
+      src: 'assets/explore.jpg',
       alt: 'featured image',
     },
     technologyArticle: ['html', 'React', 'css', 'Ruby on Rails'],
@@ -161,8 +171,10 @@ const articles = [
     the user can register new accounts, login and book a set of different 
     trip packages. It is built and connected by using two different repos, 
     including back-end(Rails) and front-end(React/Redux)`,
-    liveVersion: '<a href=" https://exploration-getaways.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href=" https://github.com/Nyame-Wolf/Exploration-Getaways-FRONTEND" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href=" https://exploration-getaways.netlify.app/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href=" https://github.com/Nyame-Wolf/Exploration-Getaways-FRONTEND" target="_blank" rel="noreferrer">See Source</a>',
   },
   {
     title: 'Holistic Med Annual Conference',
@@ -179,8 +191,10 @@ const articles = [
     description: `This is inspired by 2015 by Cindy Shin ccGlobal Korea. 
     It is a website for an imaginary annual holistic medicine conference. 
     It is made using plain vanilla javascript, HTML and css.`,
-    liveVersion: '<a href=" https://nyame-wolf.github.io/Holistic-Med-Annual-Meetup/" target="_blank" rel="noreferrer">See live</a>',
-    source: '<a href=" https://github.com/Nyame-Wolf/Holistic-Med-Annual-Meetup" target="_blank" rel="noreferrer">See Source</a>',
+    liveVersion:
+      '<a href=" https://nyame-wolf.github.io/Holistic-Med-Annual-Meetup/" target="_blank" rel="noreferrer">See live</a>',
+    source:
+      '<a href=" https://github.com/Nyame-Wolf/Holistic-Med-Annual-Meetup" target="_blank" rel="noreferrer">See Source</a>',
   },
 ];
 
