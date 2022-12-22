@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) => {
 const articleOne = {
   sectionTitle: 'My Recent Works',
   sectionImage: {
-    src: 'assets/Screenshot 2022-12-20 at 01.10.46.png',
+    src: 'assets/coins.png',
     alt: 'section image',
   },
 };
