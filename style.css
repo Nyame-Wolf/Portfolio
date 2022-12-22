@@ -1,7 +1,8 @@
 /* mobile menu */
-html {
-  height: 100%;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -33,6 +34,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-top: 60px;
 }
 
 .headline-content {
@@ -50,6 +52,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   background: #3c3a39;
+  position: fixed;
+  width: 100%;
 }
 
 .link-color {
@@ -193,6 +197,10 @@ h1 {
   color: #fff;
 }
 
+.social {
+  padding-bottom: 20px;
+}
+
 .media {
   display: flex;
   flex-direction: row;
@@ -214,14 +222,6 @@ h1 {
   margin-bottom: 80px;
 }
 
-.item1 {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 p {
   font-weight: 400;
   font-size: 16px;
@@ -240,6 +240,17 @@ h4 {
 p,
 ul > li > a {
   color: #091e42;
+}
+
+.p-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30%;
 }
 
 form button {
@@ -300,11 +311,12 @@ form button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .item1 img {
-  max-width: 100%;
-  aspect-ratio: 1/1;
+  width: 616px;
+  height: 357.11px;
 }
 
 .small-mg a {
@@ -773,7 +785,7 @@ button.footer-b:active {
   }
 
   .headline {
-    align-items: flex-start;
+    height: 600px;
   }
 
   .container {
@@ -781,22 +793,20 @@ button.footer-b:active {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 8em;
   }
 
   .headline-content {
     width: 40%;
     margin-left: 9em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   h1 {
     font-weight: 400;
     font-size: 72px;
-    line-height: 82px;
     color: #f55800;
-    height: 160px;
-    left: 0;
-    top: 192px;
   }
 
   #support {
@@ -821,8 +831,8 @@ button.footer-b:active {
   }
 
   .social {
-    align-self: flex-start;
     position: absolute;
+    left: 30px;
   }
 
   .bgimage {
@@ -834,9 +844,8 @@ button.footer-b:active {
 
   /* start works section styles */
   .item1 {
-    flex-direction: row;
-    gap: 3em;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
   }
 
   .item1 img {
